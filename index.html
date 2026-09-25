@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ByeFeed | Block distracting apps, websites and short-form feeds on Android</title>
+<meta name="description" content="ByeFeed blocks distracting apps and websites and switches off Shorts, Reels and other endless feeds on Android, while the rest of the app keeps working. Checks run on your phone. No ads, no analytics.">
+<link rel="canonical" href="https://byefeed.app/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFF7E6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/sora-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/nunito-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ByeFeed">
+<meta property="og:title" content="ByeFeed | Wave the feed goodbye">
+<meta property="og:description" content="ByeFeed blocks distracting apps and websites and switches off Shorts, Reels and other endless feeds on Android, while the rest of the app keeps working. Checks run on your phone. No ads, no analytics.">
+<meta property="og:url" content="https://byefeed.app/">
+<meta property="og:image" content="https://byefeed.app/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The ByeFeed logo, a waving yellow hand, with the words Wave the feed goodbye.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ByeFeed | Wave the feed goodbye">
+<meta name="twitter:description" content="ByeFeed blocks distracting apps and websites and switches off Shorts, Reels and other endless feeds on Android, while the rest of the app keeps working. Checks run on your phone. No ads, no analytics.">
+<meta name="twitter:image" content="https://byefeed.app/assets/img/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ByeFeed",
+  "operatingSystem": "Android 7.0 or later",
+  "applicationCategory": "LifestyleApplication",
+  "description": "Blocks distracting apps, websites, keywords and short-form video feeds on Android.",
+  "url": "https://byefeed.app/",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.byefeed.app",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bros Dolz LLC"
+  }
+}
+</script>
+<script>(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bf-theme")}catch(e){}if(t!=="light"&&t!=="dark")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";d.setAttribute("data-theme",t)})();</script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/pricing.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="bf-mark" viewBox="0 0 262.8 189">
+    <path d="M104.1 182.3C99.5 182.4 93.5 181.9 89.2 181C85.6 180.2 82.4 179.1 79.8 177.9C77.7 177 75.6 176.5 74.6 174.8C73.4 172.8 75.4 168.8 73.9 166.2C71.7 162.3 63.2 160.4 59.6 155.9C55.8 151 55.3 143.9 52.1 137.5C48.4 130.2 42.6 120.9 37.9 114.6C34.3 109.6 31.2 106.4 27 102.2C22 97 12.5 89.8 9.5 86.1C8.2 84.5 7.7 83.6 7.2 82.3C6.7 80.8 6.3 79.1 6.6 77.6C6.8 76.1 7.7 74.6 8.9 73.3C10.4 71.7 13.2 70.2 15.6 69.2C17.8 68.3 20.4 67.4 22.6 67.4C24.6 67.5 26.4 68.3 28.4 69.2C30.6 70.2 33 71.5 35.3 73.1C37.9 75.1 40.7 77.7 43.3 80.5C46.4 83.8 50.1 90.7 52.4 92.1C53.4 92.7 54.4 93.1 54.9 92.6C56.5 91.2 53.7 79.2 52.1 71.7C50.2 62.7 45.5 50.8 43.8 42.4C42.5 36.2 41.9 30.2 41.6 25.9C41.4 23.2 41.3 21.5 41.6 19.4C42 17.2 42.7 14.7 43.5 12.9C44 11.6 44.6 10.6 45.5 9.6C46.5 8.5 48.1 7.3 49.6 6.8C51 6.3 52.7 6.4 54.3 6.6C56 6.9 57.6 7.5 59.2 8.7C61.6 10.3 64.5 13.4 66.4 16.7C68.7 20.5 69.9 25.8 71.3 30.7C72.9 36.1 73.6 42.1 75.2 47.9C76.8 54.1 79.1 61.5 81.2 66.8C82.8 70.7 84.3 74.2 86.1 76.9C87.6 79 89.7 81.9 90.8 82C91.3 82 91.7 81.6 92 81C92.8 79.6 92.6 76.3 92.9 72.6C93.3 65.8 92.2 52 93.7 43.3C94.8 36.1 97.5 28.7 99.7 23.9C101.1 20.8 102.3 18.6 104.2 16.7C106 14.9 108.4 13.5 110.7 12.8C113 12.2 115.9 12.2 118 12.8C119.7 13.3 121.3 14.2 122.2 15.6C123.4 17.5 123.6 20.2 123.6 23.6C123.7 29.2 120.9 37.8 120.3 46.1C119.6 56.4 119.4 72.4 120.3 80.6C120.8 85.3 121.4 90.7 122.6 91.5C123 91.8 123.7 91.5 124.2 91.2C124.8 90.7 125.2 89.7 125.7 88.3C126.9 85 127.9 76.2 129.4 70.9C130.8 66.3 132 62.3 134.4 58.1C137 53.3 141.2 47.4 144.9 43.9C147.9 41.2 151.3 39.5 154.2 38.2C156.5 37.2 158.3 36.6 160.6 36.3C163.3 35.9 167.4 35.9 169.6 36.4C171 36.7 172.1 37.2 172.9 37.9C173.5 38.5 173.9 39 174.1 39.9C174.6 41.6 174.6 44.1 173.9 47.2C172.3 53.3 164.4 65 161.1 72.8C158.4 79.1 156.5 84.4 154.7 90.2C152.9 96 151.3 102.4 150.2 107.9C149.2 112.6 148.4 116.6 148 121.3C147.6 126.6 148.6 133.4 147.9 138.2C147.4 142.1 146.1 145.7 145 148.3C144.3 150 143.9 150.6 142.8 152.3C140.5 155.6 132.6 162.6 131.3 166C130.7 167.7 131 168.9 131.3 170.3C131.6 171.7 133.8 173.2 133.3 174.5C132.2 177.1 120.7 179.6 115.4 180.9C111.3 181.9 108.2 182.3 104.1 182.3Z" fill="#FFD447" stroke="#1C1A17" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M79.4 87.1C82.6 86.6 85.7 85.8 89 85.6C92.4 85.3 96.1 85.2 99.5 85.8C102.8 86.3 105.8 87.3 109.1 88.6C113 90.1 117.9 92.4 121.5 94.7C124.6 96.7 127.2 99 129.5 101.3C131.6 103.2 133.2 105.2 135 107.2 M56 95.6C56.1 96.9 56 98.1 56.4 99.5C57 101.5 58.4 104.7 59.4 106.4C60.1 107.5 60.6 108.1 61.5 108.9C62.9 110 64.7 111.1 67 112.1C70.2 113.6 76 114.4 79.5 116C82.5 117.3 84.8 118.7 87.1 120.5C89.4 122.3 91.4 124.3 93.1 126.7C95.1 129.4 96.4 133.1 98 136.3 M129.1 119.4C126 120.4 123.1 120.6 119.8 122.3C115.4 124.5 110.4 129.2 105.7 132.6" fill="none" stroke="#1C1A17" stroke-width="7" stroke-linecap="round"/>
+    <path d="M206.8 46.4H250.8 M206.8 80.4H232.8 M206.8 114.4H214.8" fill="none" stroke="#1C1A17" style="stroke:var(--mark-bars)" stroke-width="20" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7.5"/></symbol>
+  <symbol id="i-apps" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="7" height="7" rx="2"/><path d="m14.5 14.5 5 5m0-5-5 5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.5 2.4 14.5 0 17M12 3.5c-2.4 2.5-2.4 14.5 0 17"/></symbol>
+  <symbol id="i-feed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="M10.5 9.2v5.6l4.3-2.8z" fill="currentColor"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5M12 14.5v2.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M7 16.5V11M12 16.5V6.5M17 16.5v-3.5"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.5 18.5a4.5 4.5 0 0 1-.4-8.98A5.5 5.5 0 0 1 17.8 9a4.75 4.75 0 0 1-.8 9.5z"/><path d="M12 15.5v-5m-2.2 2.1L12 10.4l2.2 2.2"/></symbol>
+  <symbol id="i-restart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 4.5v4h-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 5.8v5.4c0 4.4 2.9 7.7 7 9 4.1-1.3 7-4.6 7-9V5.8z"/><path d="m9 12 2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-eyeoff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3l18 18"/><path d="M10.6 6.1A9.6 9.6 0 0 1 12 6c5 0 8.5 4.3 9.5 6-.5.8-1.5 2.2-3 3.5M6.6 6.6C4.6 7.9 3.2 9.8 2.5 12c1 1.7 4.5 6 9.5 6 1.6 0 3-.4 4.3-1.1"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.8"/><path d="M4.5 20c.8-3.6 3.9-5.8 7.5-5.8s6.7 2.2 7.5 5.8"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/><path d="M10 11v5.5M14 11v5.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false"><use href="#bf-mark"/></svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
+    <nav class="site-nav" id="site-menu" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="faq/index.html">FAQ</a></li>
+        <li><a href="privacy/index.html">Privacy Policy</a></li>
+        <li><a href="delete-account/index.html">Delete Account</a></li>
+        <li class="nav-cta-item"><a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.byefeed.app">Get the app</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-pressed="false" title="Switch to dark theme">
+        <span class="sr-only">Dark theme</span>
+        <svg class="icon-moon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
+        <svg class="icon-sun" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+        <span class="sr-only">Menu</span>
+        <svg class="icon-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+        <svg class="icon-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">App, website &amp; short-form blocker for Android</p>
+        <h1 class="hero-title" id="hero-title">Wave the feed <span class="hl">goodbye.</span></h1>
+        <p class="hero-sub">
+          ByeFeed blocks the apps and websites that eat your day, and switches off
+          Shorts, Reels and other endless feeds while the rest of the app keeps
+          working. It all runs on your phone, in real time, and keeps running
+          after a restart.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Get it on Google Play</a>
+          <a class="btn btn-outline" href="#how">See how it works</a>
+        </div>
+        <ul class="hero-note">
+          <li><svg aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Android 7.0 or later</li>
+          <li><svg aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Free to start</li>
+          <li><svg aria-hidden="true" focusable="false"><use href="#i-check"/></svg> No ads, no analytics</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="phone" role="img" aria-label="ByeFeed's block screen. A waving hand above the headline Bye, feed. Instagram is blocked. It was blocked by the group Deep work and has been opened 3 times today. Below are a Go Back button counting down from 9 seconds and a Pause Blocking button.">
+          <div class="phone-screen" aria-hidden="true">
+            <div class="bs-moment">
+              <svg class="bs-mark wave" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false">
+                <g class="wave-bars"><path d="M206.8 46.4H250.8 M206.8 80.4H232.8 M206.8 114.4H214.8" fill="none" style="stroke:var(--mark-bars)" stroke-width="20" stroke-linecap="round"/></g>
+                <g class="wave-hand">
+                  <path d="M104.1 182.3C99.5 182.4 93.5 181.9 89.2 181C85.6 180.2 82.4 179.1 79.8 177.9C77.7 177 75.6 176.5 74.6 174.8C73.4 172.8 75.4 168.8 73.9 166.2C71.7 162.3 63.2 160.4 59.6 155.9C55.8 151 55.3 143.9 52.1 137.5C48.4 130.2 42.6 120.9 37.9 114.6C34.3 109.6 31.2 106.4 27 102.2C22 97 12.5 89.8 9.5 86.1C8.2 84.5 7.7 83.6 7.2 82.3C6.7 80.8 6.3 79.1 6.6 77.6C6.8 76.1 7.7 74.6 8.9 73.3C10.4 71.7 13.2 70.2 15.6 69.2C17.8 68.3 20.4 67.4 22.6 67.4C24.6 67.5 26.4 68.3 28.4 69.2C30.6 70.2 33 71.5 35.3 73.1C37.9 75.1 40.7 77.7 43.3 80.5C46.4 83.8 50.1 90.7 52.4 92.1C53.4 92.7 54.4 93.1 54.9 92.6C56.5 91.2 53.7 79.2 52.1 71.7C50.2 62.7 45.5 50.8 43.8 42.4C42.5 36.2 41.9 30.2 41.6 25.9C41.4 23.2 41.3 21.5 41.6 19.4C42 17.2 42.7 14.7 43.5 12.9C44 11.6 44.6 10.6 45.5 9.6C46.5 8.5 48.1 7.3 49.6 6.8C51 6.3 52.7 6.4 54.3 6.6C56 6.9 57.6 7.5 59.2 8.7C61.6 10.3 64.5 13.4 66.4 16.7C68.7 20.5 69.9 25.8 71.3 30.7C72.9 36.1 73.6 42.1 75.2 47.9C76.8 54.1 79.1 61.5 81.2 66.8C82.8 70.7 84.3 74.2 86.1 76.9C87.6 79 89.7 81.9 90.8 82C91.3 82 91.7 81.6 92 81C92.8 79.6 92.6 76.3 92.9 72.6C93.3 65.8 92.2 52 93.7 43.3C94.8 36.1 97.5 28.7 99.7 23.9C101.1 20.8 102.3 18.6 104.2 16.7C106 14.9 108.4 13.5 110.7 12.8C113 12.2 115.9 12.2 118 12.8C119.7 13.3 121.3 14.2 122.2 15.6C123.4 17.5 123.6 20.2 123.6 23.6C123.7 29.2 120.9 37.8 120.3 46.1C119.6 56.4 119.4 72.4 120.3 80.6C120.8 85.3 121.4 90.7 122.6 91.5C123 91.8 123.7 91.5 124.2 91.2C124.8 90.7 125.2 89.7 125.7 88.3C126.9 85 127.9 76.2 129.4 70.9C130.8 66.3 132 62.3 134.4 58.1C137 53.3 141.2 47.4 144.9 43.9C147.9 41.2 151.3 39.5 154.2 38.2C156.5 37.2 158.3 36.6 160.6 36.3C163.3 35.9 167.4 35.9 169.6 36.4C171 36.7 172.1 37.2 172.9 37.9C173.5 38.5 173.9 39 174.1 39.9C174.6 41.6 174.6 44.1 173.9 47.2C172.3 53.3 164.4 65 161.1 72.8C158.4 79.1 156.5 84.4 154.7 90.2C152.9 96 151.3 102.4 150.2 107.9C149.2 112.6 148.4 116.6 148 121.3C147.6 126.6 148.6 133.4 147.9 138.2C147.4 142.1 146.1 145.7 145 148.3C144.3 150 143.9 150.6 142.8 152.3C140.5 155.6 132.6 162.6 131.3 166C130.7 167.7 131 168.9 131.3 170.3C131.6 171.7 133.8 173.2 133.3 174.5C132.2 177.1 120.7 179.6 115.4 180.9C111.3 181.9 108.2 182.3 104.1 182.3Z" fill="#FFD447" stroke="#1C1A17" stroke-width="9" stroke-linejoin="round"/>
+                  <path d="M79.4 87.1C82.6 86.6 85.7 85.8 89 85.6C92.4 85.3 96.1 85.2 99.5 85.8C102.8 86.3 105.8 87.3 109.1 88.6C113 90.1 117.9 92.4 121.5 94.7C124.6 96.7 127.2 99 129.5 101.3C131.6 103.2 133.2 105.2 135 107.2 M56 95.6C56.1 96.9 56 98.1 56.4 99.5C57 101.5 58.4 104.7 59.4 106.4C60.1 107.5 60.6 108.1 61.5 108.9C62.9 110 64.7 111.1 67 112.1C70.2 113.6 76 114.4 79.5 116C82.5 117.3 84.8 118.7 87.1 120.5C89.4 122.3 91.4 124.3 93.1 126.7C95.1 129.4 96.4 133.1 98 136.3 M129.1 119.4C126 120.4 123.1 120.6 119.8 122.3C115.4 124.5 110.4 129.2 105.7 132.6" fill="none" stroke="#1C1A17" stroke-width="7" stroke-linecap="round"/>
+                </g>
+              </svg>
+              <p class="bs-title">Bye, feed.</p>
+              <p class="bs-copy"><b>Instagram</b> is blocked.<br>You blocked this for a reason.<br>That reason hasn&rsquo;t changed.</p>
+            </div>
+            <div class="bs-decision">
+              <div class="facts">
+                <div><span class="fact-label">Blocked by</span><span class="fact-value">Deep work</span></div>
+                <div><span class="fact-label">Opened today</span><span class="fact-value">3&times;</span></div>
+              </div>
+              <div class="charge">
+                <span class="charge-fill"></span>
+                <span class="charge-label">Go Back &middot; 9s</span>
+                <span class="charge-label on">Go Back &middot; 9s</span>
+              </div>
+              <div class="ghost-btn">Pause Blocking</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The problem -->
+  <section class="band" aria-labelledby="problem-title">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2 class="section-title" id="problem-title">Feeds are built never to end.</h2>
+        <p class="lede">
+          Short-form video and infinite scroll are designed so there is always one
+          more thing to watch. You open an app to answer one message, and the feed
+          is waiting on the way in. Willpower is a poor match for that, so ByeFeed
+          puts a rule you chose between you and the feed, and holds it for you.
+        </p>
+      </div>
+      <ul class="points">
+        <li>
+          <h3>Endless by design</h3>
+          <p>A feed has no bottom, so there is never a natural moment to stop.</p>
+        </li>
+        <li>
+          <h3>Tangled up with what you need</h3>
+          <p>Messages, groups and search live inside the same apps as the feeds.</p>
+        </li>
+        <li>
+          <h3>Deleting the app is overkill</h3>
+          <p>Uninstalling costs you the useful parts too. ByeFeed lets you keep them.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="band" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What it does</p>
+        <h2 class="section-title" id="features-title">Block what pulls you in. Keep what you need.</h2>
+        <p>Set your rules once. ByeFeed enforces them the moment something matches, without asking you again.</p>
+      </div>
+      <ul class="features">
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-apps"/></svg></span>
+          <h3>Block apps</h3>
+          <p>Pick the apps that take your day. Open one during a block and the block screen is already there.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-globe"/></svg></span>
+          <h3>Websites &amp; keywords</h3>
+          <p>Block whole sites or any keyword in Chrome, Samsung Internet, Firefox, Edge, Brave, Opera, DuckDuckGo, Vivaldi and Kiwi, and optionally inside other apps&rsquo; built-in browsers. Blocked pages send you to a search engine you choose.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span>
+          <h3>Short-form feeds</h3>
+          <p>Switch off Shorts, Reels, Spotlight and more across nine apps, while messages and the rest of each app keep working.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></span>
+          <h3>Groups &amp; schedules</h3>
+          <p>Put apps, sites, keywords and feeds in a named group. Block it outright in Strict mode, or allow a set number of timed sessions, on the days and hours you pick.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-lock"/></svg></span>
+          <h3>Friction that sticks</h3>
+          <p>Countdowns on the block screen, a pause you can limit or switch off, a PIN on your settings, and optional Prevent Uninstall. A weak moment takes more than one tap.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-chart"/></svg></span>
+          <h3>Statistics &amp; widgets</h3>
+          <p>See where today went, and label apps productive, neutral or distraction. Put blocks and screen time on your home screen with widgets.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-cloud"/></svg></span>
+          <h3>Backup &amp; sync, if you want it</h3>
+          <p>Sign in with Google or email to back up your setup and sync it across devices. Skip it, and everything stays on your phone.</p>
+        </li>
+        <li class="card feature">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-restart"/></svg></span>
+          <h3>Stays on</h3>
+          <p>Blocking runs in the background and starts again by itself after your phone restarts or the app updates.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Short-form feeds -->
+  <section class="band" id="feeds" aria-labelledby="feeds-title">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Short-form feeds</p>
+        <h2 class="section-title" id="feeds-title">Keep the app. Lose the feed.</h2>
+        <p class="lede">
+          Most of the pull comes from one part of an app you have good reasons to
+          keep. ByeFeed switches off that part and leaves the rest working. Nine
+          apps are covered, each with its own switch.
+        </p>
+        <ul class="feed-list">
+          <li><strong>Nine apps.</strong> YouTube Shorts, Instagram Reels, Facebook Reels, TikTok, Snapchat Spotlight, X video, Reddit, Pinterest and LinkedIn video.</li>
+          <li><strong>Messages still work.</strong> A Reel someone sends you in a direct message still plays.</li>
+          <li><strong>Go further if you want.</strong> Stories, Explore and home feeds can be blocked too, app by app.</li>
+        </ul>
+      </div>
+      <div class="split-media">
+        <div class="card feeds" role="img" aria-label="ByeFeed's short-form settings: a list of nine apps, each with its own switch. Six are switched on and three are off.">
+          <div aria-hidden="true">
+            <p class="feeds-title">Short-form content</p>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">YouTube Shorts</span><span class="toggle"></span></div>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">Instagram Reels</span><span class="toggle"></span></div>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">Facebook Reels</span><span class="toggle"></span></div>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">TikTok</span><span class="toggle"></span></div>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">Snapchat Spotlight</span><span class="toggle"></span></div>
+            <div class="feed-row on"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">X video</span><span class="toggle"></span></div>
+            <div class="feed-row"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">Reddit</span><span class="toggle"></span></div>
+            <div class="feed-row"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">Pinterest</span><span class="toggle"></span></div>
+            <div class="feed-row"><span class="feed-tile"><svg aria-hidden="true" focusable="false"><use href="#i-feed"/></svg></span><span class="feed-name">LinkedIn video</span><span class="toggle"></span></div>
+            <p class="feeds-foot">Reels sent to you in messages still play.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="band" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 class="section-title" id="how-title">Three steps, then leave it alone.</h2>
+      </div>
+      <ol class="steps">
+        <li class="card step">
+          <h3>Make a group</h3>
+          <p>Choose the apps, websites, keywords and feeds to block, and give the group a name.</p>
+        </li>
+        <li class="card step">
+          <h3>Set the terms</h3>
+          <p>Strict, or a budget of timed sessions. On a schedule, or all the time. Add a PIN if you know you will argue with yourself.</p>
+        </li>
+        <li class="card step">
+          <h3>Get on with your day</h3>
+          <p>ByeFeed works in the background and steps in only when something on your list opens.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="band band-contrast" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Privacy</p>
+        <h2 class="section-title" id="privacy-title">Private by design.</h2>
+        <p>ByeFeed only watches for the triggers you set, and it does that on your phone.</p>
+      </div>
+      <ul class="privacy-grid">
+        <li class="card privacy-item">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-shield"/></svg></span>
+          <h3>Only your triggers</h3>
+          <p>ByeFeed reacts to the apps, sites, keywords and feeds on your block list and ignores everything else. Nothing it checks is stored or uploaded.</p>
+        </li>
+        <li class="card privacy-item">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-eyeoff"/></svg></span>
+          <h3>No ads. No analytics.</h3>
+          <p>No advertising, analytics, tracking or crash-reporting SDKs, and no advertising ID. Pro is how ByeFeed pays for itself.</p>
+        </li>
+        <li class="card privacy-item">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-user"/></svg></span>
+          <h3>An account is optional</h3>
+          <p>Every blocking feature works without signing in. An account only adds cloud backup and sync.</p>
+        </li>
+        <li class="card privacy-item">
+          <span class="ico"><svg aria-hidden="true" focusable="false"><use href="#i-trash"/></svg></span>
+          <h3>Delete it yourself</h3>
+          <p>Delete your account from inside the app and it is gone right away, together with its cloud backup.</p>
+        </li>
+      </ul>
+      <p class="band-foot"><a class="text-link" href="privacy/index.html">Read the Privacy Policy</a> &nbsp;&middot;&nbsp; <a class="text-link" href="delete-account/index.html">How to delete your account</a></p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="band" id="pricing" aria-labelledby="pricing-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Pricing</p>
+        <h2 class="section-title" id="pricing-title">Free to start. Pro when you want more.</h2>
+        <p>Every blocking feature is free inside one block group. Pro removes the limit and opens your full statistics.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="card plan" aria-labelledby="plan-free">
+          <div class="plan-head">
+            <h3 class="plan-name" id="plan-free">Free</h3>
+            <span class="chip">No time limit</span>
+          </div>
+          <p class="price-free"><span data-price-zero>$0</span></p>
+          <p class="plan-lead">No account and no card needed.</p>
+          <ul class="checks">
+            <li>App, website and keyword blocking</li>
+            <li>All nine short-form apps</li>
+            <li>Blocking inside other apps&rsquo; browsers</li>
+            <li>Schedules, session limits and Strict mode</li>
+            <li>PIN, countdowns and Prevent Uninstall</li>
+            <li>One block group</li>
+            <li>Today&rsquo;s statistics</li>
+            <li>Three home-screen widgets</li>
+            <li>Cloud backup and sync <span class="muted">(with an account)</span></li>
+          </ul>
+          <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.byefeed.app">Download free</a>
+        </article>
+
+        <article class="card plan plan-pro" aria-labelledby="plan-pro">
+          <div class="plan-head">
+            <h3 class="plan-name" id="plan-pro">Pro</h3>
+            <span class="chip chip-brand">Everything in Free, plus</span>
+          </div>
+          <ul class="checks">
+            <li>Unlimited block groups</li>
+            <li>Weekly and custom-range statistics</li>
+            <li>The weekly screen-time widget</li>
+          </ul>
+          <ul class="plan-options" aria-label="Pro plans">
+            <li class="option">
+              <span class="option-name">Monthly</span>
+              <span class="option-price"><span data-price-monthly>$6.99</span><small>/month</small></span>
+              <span class="option-note">Billed every month.</span>
+            </li>
+            <li class="option option-best">
+              <span class="option-name">Yearly <span class="chip chip-brand save" data-price-save>Save 28%</span></span>
+              <span class="option-price"><span data-price-yearly>$59.99</span><small>/year</small></span>
+              <span class="option-note">Works out at <span data-price-effective>$5.00</span> a month.</span>
+            </li>
+            <li class="option">
+              <span class="option-name">Lifetime</span>
+              <span class="option-price"><span data-price-lifetime>$179.99</span><small> once</small></span>
+              <span class="option-note">One payment. Nothing renews, nothing expires.</span>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Get Pro on Google Play</a>
+          <p class="plan-fine">Subscriptions renew automatically until you cancel in the Play Store.</p>
+        </article>
+      </div>
+
+      <p class="price-country">
+        <span data-price-static>Prices shown for <strong data-price-country>United States</strong>.</span>
+        <span data-price-picker hidden></span>
+      </p>
+
+      <p class="fine-print">
+        Prices are set per country, and are lower in many of them. Google Play
+        charges you in the currency it uses for your country and handles any
+        tax, and it shows the final price before you confirm. The monthly and
+        yearly figures here are estimates converted from our base prices and can
+        differ slightly from Google Play&rsquo;s; lifetime prices are Google
+        Play&rsquo;s own. Cancel any time in the
+        <a href="https://play.google.com/store/account/subscriptions">Play Store</a>
+        and Pro stays on until the end of the period you have paid for. You don&rsquo;t
+        need an account to subscribe. If a subscription ends, nothing you set up is
+        deleted: your oldest group keeps running and the others pause until you
+        subscribe again.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ teaser -->
+  <section class="band" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow">Questions</p>
+        <h2 class="section-title" id="faq-title">Before you install</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is ByeFeed available on iPhone?</summary>
+          <div class="answer">
+            <p>Not at the moment. ByeFeed is Android only (Android 7.0 or later), and there is no App Store version.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I need an account?</summary>
+          <div class="answer">
+            <p>No. Choose <strong>Continue without an account</strong> during setup and every blocking feature still works. Nothing is created on our servers and your setup stays on your phone. An account only adds cloud backup and sync across devices.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How does ByeFeed know what to block?</summary>
+          <div class="answer">
+            <p>It watches only for the triggers you set: a blocked app opening, a blocked site or keyword in your browser, or a short-form feed you switched off. Everything else is ignored, and the check happens on your phone without storing anything. <a href="faq/index.html#detection">Exactly how it works</a>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I delete my account?</summary>
+          <div class="answer">
+            <p>In the app, open <strong>Settings</strong>, tap your account under <strong>Account</strong>, then <strong>Delete account</strong>. It takes effect immediately and removes your cloud backup. The <a href="delete-account/index.html">Delete Account page</a> covers every case, including what to do if you can&rsquo;t open the app.</p>
+          </div>
+        </details>
+      </div>
+      <p class="more-link"><a class="btn btn-outline btn-sm" href="faq/index.html">All questions <svg aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- Closing call to action -->
+  <section class="band band-contrast closer" aria-labelledby="closer-title">
+    <div class="wrap">
+      <svg class="mark" width="153" height="110" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false"><use href="#bf-mark"/></svg>
+      <h2 id="closer-title">Ready to wave the feed goodbye?</h2>
+      <p>Free to download. No account needed.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Get it on Google Play</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="index.html"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false"><use href="#bf-mark"/></svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
+      <p>Break free from your screen.</p>
+      <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Get it on Google Play</a>
+    </div>
+    <nav aria-labelledby="f-product">
+      <h2 class="footer-title" id="f-product">Product</h2>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#privacy">Privacy by design</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.byefeed.app">Google Play</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="f-help">
+      <h2 class="footer-title" id="f-help">Help</h2>
+      <ul class="footer-links">
+        <li><a href="faq/index.html">FAQ</a></li>
+        <li><a href="mailto:support@brosdolz.com">Contact support</a></li>
+        <li><a href="faq/index.html#report-a-bug">Report a problem</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="f-legal">
+      <h2 class="footer-title" id="f-legal">Legal</h2>
+      <ul class="footer-links">
+        <li><a href="privacy/index.html">Privacy Policy</a></li>
+        <li><a href="delete-account/index.html">Delete your account</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span data-year>2026</span> Bros Dolz LLC. ByeFeed is made by Bros Dolz LLC.</p>
+    <p>Google Play is a trademark of Google LLC.</p>
+  </div>
+</footer>
+</body>
+</html>
