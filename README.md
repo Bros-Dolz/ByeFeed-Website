@@ -23,11 +23,13 @@ footer.
 | Not found | `404.html` | any unknown address (GitHub Pages serves it automatically) |
 | Old addresses | `privacy.html`, `account-deletion.html` | redirect to the pages above; older app builds and store listings link here, so keep them |
 
-Every link inside the site names the page's file (`privacy/index.html`, not
-`privacy/`) and is relative, so a click always lands on the page, whether the
-site is opened from disk, served at the root of a domain, or served from a
-sub-folder. The short addresses still work on any web server, and they are what
 the canonical tags, the sitemap and the app use.
+Navbar links use the short directory addresses (`privacy/`, not
+`privacy/index.html`) and are relative, so a click keeps the clean URL whether
+the site is served at the root of a domain or from a sub-folder. Other internal
+links may still name the page file so the site also works when opened directly
+from disk. The short addresses are what the canonical tags, the sitemap and the
+app use.
 
 The app links to `https://byefeed.app/privacy/` and `https://byefeed.app/delete-account/`
 (`lib/core/constants/legal_links.dart`). Google Play's reviewers open both, so
