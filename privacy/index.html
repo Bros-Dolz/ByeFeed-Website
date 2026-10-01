@@ -1,581 +1,1276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ByeFeed Privacy Policy</title>
-<meta name="description" content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
-<link rel="canonical" href="https://byefeed.app/privacy/">
-<meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#FFF7E6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-<link rel="preload" href="../assets/fonts/sora-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="../assets/fonts/nunito-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/css/site.css">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="ByeFeed">
-<meta property="og:title" content="ByeFeed | Privacy Policy">
-<meta property="og:description" content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
-<meta property="og:url" content="https://byefeed.app/privacy/">
-<meta property="og:image" content="https://byefeed.app/assets/img/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="The ByeFeed logo, a waving yellow hand, with the words Wave the feed goodbye.">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ByeFeed | Privacy Policy">
-<meta name="twitter:description" content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
-<meta name="twitter:image" content="https://byefeed.app/assets/img/og-image.png">
-<script>(function(){var d=document.documentElement,t=null;d.classList.add("js");try{t=localStorage.getItem("bf-theme")}catch(e){}if(t!=="light"&&t!=="dark")t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";d.setAttribute("data-theme",t)})();</script>
-<script src="../assets/js/site.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByeFeed Privacy Policy</title>
+  <meta name="description"
+    content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
+  <link rel="canonical" href="https://byefeed.app/privacy/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#FFF7E6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C1A17" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/sora-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/nunito-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ByeFeed">
+  <meta property="og:title" content="ByeFeed | Privacy Policy">
+  <meta property="og:description"
+    content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
+  <meta property="og:url" content="https://byefeed.app/privacy/">
+  <meta property="og:image" content="https://byefeed.app/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The ByeFeed logo, a waving yellow hand, with the words Wave the feed goodbye.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ByeFeed | Privacy Policy">
+  <meta name="twitter:description"
+    content="What the ByeFeed app and website collect, what stays on your phone, what is stored in our database, who can see it, how long it is kept, and how to delete it.">
+  <meta name="twitter:image" content="https://byefeed.app/assets/img/og-image.png">
+  <script>(function () { var d = document.documentElement, t = null; d.classList.add("js"); try { t = localStorage.getItem("bf-theme") } catch (e) { } if (t !== "light" && t !== "dark") t = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; d.setAttribute("data-theme", t) })();</script>
+  <script src="../assets/js/site.js" defer></script>
 </head>
+
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<svg class="sprite" aria-hidden="true" focusable="false">
-  <symbol id="bf-mark" viewBox="0 0 262.8 189">
-    <path d="M104.1 182.3C99.5 182.4 93.5 181.9 89.2 181C85.6 180.2 82.4 179.1 79.8 177.9C77.7 177 75.6 176.5 74.6 174.8C73.4 172.8 75.4 168.8 73.9 166.2C71.7 162.3 63.2 160.4 59.6 155.9C55.8 151 55.3 143.9 52.1 137.5C48.4 130.2 42.6 120.9 37.9 114.6C34.3 109.6 31.2 106.4 27 102.2C22 97 12.5 89.8 9.5 86.1C8.2 84.5 7.7 83.6 7.2 82.3C6.7 80.8 6.3 79.1 6.6 77.6C6.8 76.1 7.7 74.6 8.9 73.3C10.4 71.7 13.2 70.2 15.6 69.2C17.8 68.3 20.4 67.4 22.6 67.4C24.6 67.5 26.4 68.3 28.4 69.2C30.6 70.2 33 71.5 35.3 73.1C37.9 75.1 40.7 77.7 43.3 80.5C46.4 83.8 50.1 90.7 52.4 92.1C53.4 92.7 54.4 93.1 54.9 92.6C56.5 91.2 53.7 79.2 52.1 71.7C50.2 62.7 45.5 50.8 43.8 42.4C42.5 36.2 41.9 30.2 41.6 25.9C41.4 23.2 41.3 21.5 41.6 19.4C42 17.2 42.7 14.7 43.5 12.9C44 11.6 44.6 10.6 45.5 9.6C46.5 8.5 48.1 7.3 49.6 6.8C51 6.3 52.7 6.4 54.3 6.6C56 6.9 57.6 7.5 59.2 8.7C61.6 10.3 64.5 13.4 66.4 16.7C68.7 20.5 69.9 25.8 71.3 30.7C72.9 36.1 73.6 42.1 75.2 47.9C76.8 54.1 79.1 61.5 81.2 66.8C82.8 70.7 84.3 74.2 86.1 76.9C87.6 79 89.7 81.9 90.8 82C91.3 82 91.7 81.6 92 81C92.8 79.6 92.6 76.3 92.9 72.6C93.3 65.8 92.2 52 93.7 43.3C94.8 36.1 97.5 28.7 99.7 23.9C101.1 20.8 102.3 18.6 104.2 16.7C106 14.9 108.4 13.5 110.7 12.8C113 12.2 115.9 12.2 118 12.8C119.7 13.3 121.3 14.2 122.2 15.6C123.4 17.5 123.6 20.2 123.6 23.6C123.7 29.2 120.9 37.8 120.3 46.1C119.6 56.4 119.4 72.4 120.3 80.6C120.8 85.3 121.4 90.7 122.6 91.5C123 91.8 123.7 91.5 124.2 91.2C124.8 90.7 125.2 89.7 125.7 88.3C126.9 85 127.9 76.2 129.4 70.9C130.8 66.3 132 62.3 134.4 58.1C137 53.3 141.2 47.4 144.9 43.9C147.9 41.2 151.3 39.5 154.2 38.2C156.5 37.2 158.3 36.6 160.6 36.3C163.3 35.9 167.4 35.9 169.6 36.4C171 36.7 172.1 37.2 172.9 37.9C173.5 38.5 173.9 39 174.1 39.9C174.6 41.6 174.6 44.1 173.9 47.2C172.3 53.3 164.4 65 161.1 72.8C158.4 79.1 156.5 84.4 154.7 90.2C152.9 96 151.3 102.4 150.2 107.9C149.2 112.6 148.4 116.6 148 121.3C147.6 126.6 148.6 133.4 147.9 138.2C147.4 142.1 146.1 145.7 145 148.3C144.3 150 143.9 150.6 142.8 152.3C140.5 155.6 132.6 162.6 131.3 166C130.7 167.7 131 168.9 131.3 170.3C131.6 171.7 133.8 173.2 133.3 174.5C132.2 177.1 120.7 179.6 115.4 180.9C111.3 181.9 108.2 182.3 104.1 182.3Z" fill="#FFD447" stroke="#1C1A17" stroke-width="9" stroke-linejoin="round"/>
-    <path d="M79.4 87.1C82.6 86.6 85.7 85.8 89 85.6C92.4 85.3 96.1 85.2 99.5 85.8C102.8 86.3 105.8 87.3 109.1 88.6C113 90.1 117.9 92.4 121.5 94.7C124.6 96.7 127.2 99 129.5 101.3C131.6 103.2 133.2 105.2 135 107.2 M56 95.6C56.1 96.9 56 98.1 56.4 99.5C57 101.5 58.4 104.7 59.4 106.4C60.1 107.5 60.6 108.1 61.5 108.9C62.9 110 64.7 111.1 67 112.1C70.2 113.6 76 114.4 79.5 116C82.5 117.3 84.8 118.7 87.1 120.5C89.4 122.3 91.4 124.3 93.1 126.7C95.1 129.4 96.4 133.1 98 136.3 M129.1 119.4C126 120.4 123.1 120.6 119.8 122.3C115.4 124.5 110.4 129.2 105.7 132.6" fill="none" stroke="#1C1A17" stroke-width="7" stroke-linecap="round"/>
-    <path d="M206.8 46.4H250.8 M206.8 80.4H232.8 M206.8 114.4H214.8" fill="none" stroke="#1C1A17" style="stroke:var(--mark-bars)" stroke-width="20" stroke-linecap="round"/>
-  </symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-  <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
-  <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z"/></symbol>
-</svg>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="../"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false"><use href="#bf-mark"/></svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
-    <nav class="site-nav" id="site-menu" aria-label="Main">
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../faq/">FAQ</a></li>
-        <li><a href="../privacy/" aria-current="page">Privacy Policy</a></li>
-        <li><a href="../delete-account/">Delete Account</a></li>
-        <li class="nav-cta-item"><a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.byefeed.app">Get the app</a></li>
-      </ul>
-    </nav>
-    <div class="header-actions">
-      <button class="theme-toggle" type="button" aria-pressed="false" title="Switch to dark theme">
-        <span class="sr-only">Dark theme</span>
-        <svg class="icon-moon" aria-hidden="true" focusable="false"><use href="#i-moon"/></svg>
-        <svg class="icon-sun" aria-hidden="true" focusable="false"><use href="#i-sun"/></svg>
-      </button>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        <span class="sr-only">Menu</span>
-        <svg class="icon-open" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
-        <svg class="icon-close" aria-hidden="true" focusable="false"><use href="#i-close"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
-<main id="main">
-  <div class="page-head">
-    <div class="wrap">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol>
-          <li><a href="../index.html">Home</a></li>
-          <li><span aria-current="page">Privacy Policy</span></li>
-        </ol>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="bf-mark" viewBox="0 0 262.8 189">
+      <path
+        d="M104.1 182.3C99.5 182.4 93.5 181.9 89.2 181C85.6 180.2 82.4 179.1 79.8 177.9C77.7 177 75.6 176.5 74.6 174.8C73.4 172.8 75.4 168.8 73.9 166.2C71.7 162.3 63.2 160.4 59.6 155.9C55.8 151 55.3 143.9 52.1 137.5C48.4 130.2 42.6 120.9 37.9 114.6C34.3 109.6 31.2 106.4 27 102.2C22 97 12.5 89.8 9.5 86.1C8.2 84.5 7.7 83.6 7.2 82.3C6.7 80.8 6.3 79.1 6.6 77.6C6.8 76.1 7.7 74.6 8.9 73.3C10.4 71.7 13.2 70.2 15.6 69.2C17.8 68.3 20.4 67.4 22.6 67.4C24.6 67.5 26.4 68.3 28.4 69.2C30.6 70.2 33 71.5 35.3 73.1C37.9 75.1 40.7 77.7 43.3 80.5C46.4 83.8 50.1 90.7 52.4 92.1C53.4 92.7 54.4 93.1 54.9 92.6C56.5 91.2 53.7 79.2 52.1 71.7C50.2 62.7 45.5 50.8 43.8 42.4C42.5 36.2 41.9 30.2 41.6 25.9C41.4 23.2 41.3 21.5 41.6 19.4C42 17.2 42.7 14.7 43.5 12.9C44 11.6 44.6 10.6 45.5 9.6C46.5 8.5 48.1 7.3 49.6 6.8C51 6.3 52.7 6.4 54.3 6.6C56 6.9 57.6 7.5 59.2 8.7C61.6 10.3 64.5 13.4 66.4 16.7C68.7 20.5 69.9 25.8 71.3 30.7C72.9 36.1 73.6 42.1 75.2 47.9C76.8 54.1 79.1 61.5 81.2 66.8C82.8 70.7 84.3 74.2 86.1 76.9C87.6 79 89.7 81.9 90.8 82C91.3 82 91.7 81.6 92 81C92.8 79.6 92.6 76.3 92.9 72.6C93.3 65.8 92.2 52 93.7 43.3C94.8 36.1 97.5 28.7 99.7 23.9C101.1 20.8 102.3 18.6 104.2 16.7C106 14.9 108.4 13.5 110.7 12.8C113 12.2 115.9 12.2 118 12.8C119.7 13.3 121.3 14.2 122.2 15.6C123.4 17.5 123.6 20.2 123.6 23.6C123.7 29.2 120.9 37.8 120.3 46.1C119.6 56.4 119.4 72.4 120.3 80.6C120.8 85.3 121.4 90.7 122.6 91.5C123 91.8 123.7 91.5 124.2 91.2C124.8 90.7 125.2 89.7 125.7 88.3C126.9 85 127.9 76.2 129.4 70.9C130.8 66.3 132 62.3 134.4 58.1C137 53.3 141.2 47.4 144.9 43.9C147.9 41.2 151.3 39.5 154.2 38.2C156.5 37.2 158.3 36.6 160.6 36.3C163.3 35.9 167.4 35.9 169.6 36.4C171 36.7 172.1 37.2 172.9 37.9C173.5 38.5 173.9 39 174.1 39.9C174.6 41.6 174.6 44.1 173.9 47.2C172.3 53.3 164.4 65 161.1 72.8C158.4 79.1 156.5 84.4 154.7 90.2C152.9 96 151.3 102.4 150.2 107.9C149.2 112.6 148.4 116.6 148 121.3C147.6 126.6 148.6 133.4 147.9 138.2C147.4 142.1 146.1 145.7 145 148.3C144.3 150 143.9 150.6 142.8 152.3C140.5 155.6 132.6 162.6 131.3 166C130.7 167.7 131 168.9 131.3 170.3C131.6 171.7 133.8 173.2 133.3 174.5C132.2 177.1 120.7 179.6 115.4 180.9C111.3 181.9 108.2 182.3 104.1 182.3Z"
+        fill="#FFD447" stroke="#1C1A17" stroke-width="9" stroke-linejoin="round" />
+      <path
+        d="M79.4 87.1C82.6 86.6 85.7 85.8 89 85.6C92.4 85.3 96.1 85.2 99.5 85.8C102.8 86.3 105.8 87.3 109.1 88.6C113 90.1 117.9 92.4 121.5 94.7C124.6 96.7 127.2 99 129.5 101.3C131.6 103.2 133.2 105.2 135 107.2 M56 95.6C56.1 96.9 56 98.1 56.4 99.5C57 101.5 58.4 104.7 59.4 106.4C60.1 107.5 60.6 108.1 61.5 108.9C62.9 110 64.7 111.1 67 112.1C70.2 113.6 76 114.4 79.5 116C82.5 117.3 84.8 118.7 87.1 120.5C89.4 122.3 91.4 124.3 93.1 126.7C95.1 129.4 96.4 133.1 98 136.3 M129.1 119.4C126 120.4 123.1 120.6 119.8 122.3C115.4 124.5 110.4 129.2 105.7 132.6"
+        fill="none" stroke="#1C1A17" stroke-width="7" stroke-linecap="round" />
+      <path d="M206.8 46.4H250.8 M206.8 80.4H232.8 M206.8 114.4H214.8" fill="none" stroke="#1C1A17"
+        style="stroke:var(--mark-bars)" stroke-width="20" stroke-linecap="round" />
+    </symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M6 6l12 12M18 6 6 18" />
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M8 5v14l11-7z" fill="currentColor" stroke="none" />
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4" />
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <path d="M20 14.6A8.2 8.2 0 0 1 9.4 4a8.2 8.2 0 1 0 10.6 10.6z" />
+    </symbol>
+  </svg>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189" aria-hidden="true"
+          focusable="false">
+          <use href="#bf-mark" />
+        </svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
+      <nav class="site-nav" id="site-menu" aria-label="Main">
+        <ul>
+          <li><a href="../">Home</a></li>
+          <li><a href="../faq/">FAQ</a></li>
+          <li><a href="../privacy/" aria-current="page">Privacy Policy</a></li>
+          <li><a href="../delete-account/">Delete Account</a></li>
+          <li class="nav-cta-item"><a class="btn btn-primary btn-sm"
+              href="https://play.google.com/store/apps/details?id=com.byefeed.app">Get the app</a></li>
+        </ul>
       </nav>
-      <h1>Privacy Policy</h1>
-      <p class="lead">What ByeFeed collects, what never leaves your phone, where your data is stored, who can see it, how long it is kept, and how to delete it.</p>
-      <p class="meta">Last updated: 25 September 2026</p>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-pressed="false" title="Switch to dark theme">
+          <span class="sr-only">Dark theme</span>
+          <svg class="icon-moon" aria-hidden="true" focusable="false">
+            <use href="#i-moon" />
+          </svg>
+          <svg class="icon-sun" aria-hidden="true" focusable="false">
+            <use href="#i-sun" />
+          </svg>
+        </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Menu</span>
+          <svg class="icon-open" aria-hidden="true" focusable="false">
+            <use href="#i-menu" />
+          </svg>
+          <svg class="icon-close" aria-hidden="true" focusable="false">
+            <use href="#i-close" />
+          </svg>
+        </button>
+      </div>
     </div>
-  </div>
+  </header>
+  <main id="main">
+    <div class="page-head">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><span aria-current="page">Privacy Policy</span></li>
+          </ol>
+        </nav>
+        <h1>Privacy Policy</h1>
+        <p class="lead">What ByeFeed collects, what never leaves your phone, where your data is stored, who can see it,
+          how long it is kept, and how to delete it.</p>
+        <p class="meta">Last updated: 1 October 2026</p>
+      </div>
+    </div>
 
-  <div class="wrap doc-layout">
-    <details class="toc" open>
-      <summary>On this page</summary>
-      <nav aria-label="Privacy Policy sections">
-        <ol>
-          <li><a href="#scope">1. Introduction and scope</a></li>
-          <li><a href="#summary">2. At a glance</a></li>
-          <li><a href="#collect">3. Information we collect</a></li>
-          <li><a href="#on-device">4. Information processed on your phone only</a></li>
-          <li><a href="#database">5. Information stored in our database</a></li>
-          <li><a href="#technical">6. Device and technical information</a></li>
-          <li><a href="#cookies">7. Cookies and local storage</a></li>
-          <li><a href="#purposes">8. Why we use it</a></li>
-          <li><a href="#retention">9. How long it is kept</a></li>
-          <li><a href="#deletion">10. Account and data deletion</a></li>
-          <li><a href="#access">11. Who can access your data</a></li>
-          <li><a href="#third-parties">12. Third-party technologies and services</a></li>
-          <li><a href="#no-selling">13. No selling, renting or advertising</a></li>
-          <li><a href="#does-not">14. What ByeFeed does not do</a></li>
-          <li><a href="#permissions">15. App permissions</a></li>
-          <li><a href="#security">16. Security</a></li>
-          <li><a href="#backups">17. Backups</a></li>
-          <li><a href="#payments">18. Payments and refunds</a></li>
-          <li><a href="#support">19. Support and diagnostics</a></li>
-          <li><a href="#rights">20. Your rights and requests</a></li>
-          <li><a href="#children">21. Children</a></li>
-          <li><a href="#international">22. Where data is processed</a></li>
-          <li><a href="#changes">23. Changes to this policy</a></li>
-          <li><a href="#ai">24. AI disclosure</a></li>
-          <li><a href="#contact">25. Contact</a></li>
-        </ol>
+    <div class="wrap doc-layout">
+      <details class="toc" open>
+        <summary>On this page</summary>
+        <nav aria-label="Privacy Policy sections">
+          <ol>
+            <li><a href="#scope">1. Introduction and scope</a></li>
+            <li><a href="#summary">2. At a glance</a></li>
+            <li><a href="#collect">3. Information we collect</a></li>
+            <li><a href="#on-device">4. Information processed on your phone only</a></li>
+            <li><a href="#database">5. Information stored in our database</a></li>
+            <li><a href="#technical">6. Device and technical information</a></li>
+            <li><a href="#cookies">7. Cookies and local storage</a></li>
+            <li><a href="#purposes">8. Why we use it</a></li>
+            <li><a href="#retention">9. How long it is kept</a></li>
+            <li><a href="#deletion">10. Account and data deletion</a></li>
+            <li><a href="#access">11. Who can access your data</a></li>
+            <li><a href="#third-parties">12. Third-party technologies and services</a></li>
+            <li><a href="#no-selling">13. No selling, renting or advertising</a></li>
+            <li><a href="#does-not">14. What ByeFeed does not do</a></li>
+            <li><a href="#permissions">15. App permissions</a></li>
+            <li><a href="#security">16. Security</a></li>
+            <li><a href="#backups">17. Backups</a></li>
+            <li><a href="#payments">18. Payments and refunds</a></li>
+            <li><a href="#support">19. Support and diagnostics</a></li>
+            <li><a href="#rights">20. Your rights and requests</a></li>
+            <li><a href="#children">21. Children</a></li>
+            <li><a href="#international">22. Where data is processed</a></li>
+            <li><a href="#changes">23. Changes to this policy</a></li>
+            <li><a href="#ai">24. AI disclosure</a></li>
+            <li><a href="#contact">25. Contact</a></li>
+          </ol>
+        </nav>
+      </details>
+
+      <article class="doc">
+
+        <section id="scope" aria-labelledby="h-scope">
+          <h2 id="h-scope">1. Introduction and scope</h2>
+          <p>ByeFeed is an app, website and short-form feed blocker for Android, made by <strong>Bros Dolz LLC</strong>
+            (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy covers:</p>
+          <ul>
+            <li>the ByeFeed Android app (package name <code>com.byefeed.app</code>), and</li>
+            <li>this website, <strong>byefeed.app</strong>.</li>
+          </ul>
+          <p>It explains what information each of them handles, why, where it goes, how long it is kept and what choices
+            you have. It doesn&rsquo;t cover services you reach through the app that have their own privacy policies,
+            such as Google Play and Google Sign-In.</p>
+          <p>Bros Dolz LLC is responsible for the data described here. You can reach us at <a
+              href="mailto:support@brosdolz.com">support@brosdolz.com</a>, or by post at Bros Dolz LLC, 418 Broadway Ste
+            N, Albany, NY 12207-2922, United States.</p>
+        </section>
+
+        <section id="summary" aria-labelledby="h-summary">
+          <h2 id="h-summary">2. At a glance</h2>
+          <ul>
+            <li><strong>Blocking happens on your phone.</strong> ByeFeed only watches for the triggers on your block
+              list and ignores everything else. Nothing it checks is stored or uploaded.</li>
+            <li><strong>An account is optional.</strong> Without one, nothing about you is uploaded to us.</li>
+            <li><strong>With an account</strong>, we store your email address and one backup of your ByeFeed setup, so
+              you can restore it and sync it across devices.</li>
+            <li><strong>Payments go through Google Play.</strong> We never see your card or bank details.</li>
+            <li><strong>No ads, no tracking and no crash-reporting service.</strong> The only things we count are
+              anonymous totals for our in-app messages, never who saw them (<a href="#in-app-messages">section
+                3</a>), and, only if you switch it on, rounded anonymous totals about your week (<a
+                href="#weekly-totals">section 3</a>). We don&rsquo;t sell your data.</li>
+            <li><strong>Circles are opt-in.</strong> If you join one, the people in it see your handle, your hand
+              and whether each of your days was won, and nothing else (<a href="#circles">section 3</a>).</li>
+            <li><strong>Nothing goes to an AI model unless you ask.</strong> The only exception is <span
+                class="ui">Suggest a line</span> in Studio, which sends the goal you typed and a tone, and only after
+              you agree (<a href="#suggested-lines">section 3</a>).</li>
+            <li><strong>You can delete your account inside the app.</strong> It is deleted immediately.</li>
+          </ul>
+        </section>
+
+        <section id="collect" aria-labelledby="h-collect">
+          <h2 id="h-collect">3. Information we collect</h2>
+          <p>What we hold depends on whether you have an account. If you choose <span class="ui">Continue without an
+              account</span> during setup, <strong>nothing is created on our servers</strong>: your setup stays on your
+            phone and there is no record of you with us.</p>
+          <p>An account is created only when you:</p>
+          <ul>
+            <li>create one with an email address and password (confirmed with a 6-digit code we email you),</li>
+            <li>sign in with Google, or</li>
+            <li>redeem an unlock code while signed out. The code has to belong to an account, so the app creates one
+              with no email address and no password on it. It asks you first.</li>
+          </ul>
+
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Summary of information collected">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Information</th>
+                  <th scope="col">When</th>
+                  <th scope="col">Why</th>
+                  <th scope="col">Kept until</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Account ID</th>
+                  <td>Any account</td>
+                  <td>To identify your account and link your backup and purchases to it</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Email address</th>
+                  <td>Email or Google accounts</td>
+                  <td>To sign you in and confirm requests are yours</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Password hash</th>
+                  <td>Email accounts</td>
+                  <td>To sign you in</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Google sign-in details</th>
+                  <td>Google accounts</td>
+                  <td>To sign you in without a password</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Your ByeFeed setup (cloud backup)</th>
+                  <td>Any account</td>
+                  <td>To restore your setup and sync it across devices</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Purchase and subscription records</th>
+                  <td>Pro bought while you have an account</td>
+                  <td>To confirm Pro and keep its status current</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Unlock code redemptions</th>
+                  <td>You redeem a code</td>
+                  <td>To grant Pro and stop codes being guessed</td>
+                  <td>You delete the account (failed attempts: 24 hours)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Circle profile, memberships, day statuses and cheers</th>
+                  <td>You join or make a circle</td>
+                  <td>To show your circle who kept their days, and let you cheer each other on</td>
+                  <td>You leave your last circle or delete the account (day statuses: 35 days; cheers: 30 days)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Device token for circle notifications</th>
+                  <td>You switch on circle notifications</td>
+                  <td>To tell you about cheers and ally requests</td>
+                  <td>You switch them off, sign out or delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Support emails</th>
+                  <td>You write to us</td>
+                  <td>To answer you</td>
+                  <td>As long as needed to help you</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="muted">Accounts with no email address are also deleted automatically after 90 days without activity,
+            unless they hold Pro (<a href="#retention">section 9</a>).</p>
+
+          <h3 id="account-info">Account information</h3>
+          <ul>
+            <li><strong>Account ID.</strong> A random identifier (a UUID) created by our authentication provider,
+              Supabase, when the account is created. It isn&rsquo;t derived from your phone, phone number or advertising
+              ID, and on its own it identifies nobody. The app shows it as <span class="ui">Account ID</span> on the
+              account page of an account with no email address.</li>
+            <li><strong>Email address</strong>, if you sign up with email or sign in with Google.</li>
+            <li>Records Supabase keeps about the account itself, such as when it was created and when it last signed in.
+            </li>
+          </ul>
+
+          <h3 id="auth-info">Authentication information</h3>
+          <ul>
+            <li><strong>Password.</strong> If you create an account with email and password, Supabase stores only a
+              one-way hash of your password (bcrypt), never the password itself. We can&rsquo;t see it.</li>
+            <li><strong>Google sign-in.</strong> If you choose <span class="ui">Continue with Google</span>, Google
+              confirms who you are and passes ByeFeed a sign-in token with your Google account&rsquo;s email address and
+              the basic profile details Google includes, such as your name and profile picture link. Supabase keeps
+              these with your account. No password is stored. ByeFeed doesn&rsquo;t show or use your name or picture.
+            </li>
+            <li><strong>Verification codes.</strong> We email 6-digit codes to confirm a new account, reset a password
+              or change an email address. Each code expires after 15 minutes. ByeFeed has no passwordless sign-in; codes
+              are only used for these three things.</li>
+            <li><strong>Sign-in session.</strong> Once you are signed in, a session token is kept in the app&rsquo;s
+              private storage on your phone so you stay signed in.</li>
+          </ul>
+
+          <h3 id="backup-data">Your ByeFeed setup (cloud backup)</h3>
+          <p>If you have an account, the app keeps one backup of your setup in our database, up to 2&nbsp;MB, so you can
+            restore it and use it on more than one device. It contains:</p>
+          <ul>
+            <li>your block groups: the apps, websites, keywords and short-form feeds you chose to block, their schedules
+              and session limits;</li>
+            <li>your protection and cooldown settings: countdown lengths, pause length, PIN attempt limit, which
+              settings are PIN-protected, and the PIN-recovery amount you chose (a setting only; no payment is ever
+              taken);</li>
+            <li>a <strong>SHA-256 hash of your PIN</strong>, never the PIN itself. If you let a friend hold your
+              PIN, ByeFeed makes it and opens your share sheet; the message goes through whatever app you pick, and
+              ByeFeed keeps only the hash;</li>
+            <li>your default redirect site;</li>
+            <li>statistics counters: blocks today, focus time today, how many times you have paused blocking, and the
+              date and app of the last pause;</li>
+            <li>your pause history: for each time you paused blocking, switched off or deleted a blocking group while it
+              was blocking, or restored a group&rsquo;s sessions, the time, the app or group, which of these it
+              was, what you typed when asked what was pulling you in, and your answer if you told ByeFeed what got
+              you (such as &ldquo;bored&rdquo; or &ldquo;tired&rdquo;);</li>
+            <li>your days: for each day since you started using this feature, whether you kept your blocking groups
+              (won, lost, a rest day you declared, or not counted), how many blocking groups were on, how many times
+              you went back from a block screen and how many times you paused;</li>
+            <li>your pacts and challenges: what each one says in your words, the blocking group it is on, its days,
+              times or sessions, how firm it is, when it started and ends, how it went, a change to a locked pact that
+              is waiting for midnight, whether it earns time with focus and at what rate, and the group&rsquo;s
+              schedule and limits from before it, so they can be put back when it ends;</li>
+            <li>your focus sessions and earned time: when each focus session ran, how long, whether you finished
+              it, what it earned, and when you spent earned minutes;</li>
+            <li>your Studio screens: which screen each one is for (the block screen or one of a session&rsquo;s
+              prompts), their names, words and themes, and which blocks they are for. The pictures you chose for them
+              are <strong>not</strong> included; they stay on your phone;</li>
+            <li>your hand: how you dressed it and which items you have unlocked;</li>
+            <li>the stamps you have earned and when;</li>
+            <li>how you labelled apps in your statistics (productive, neutral or distraction);</li>
+            <li>what you told ByeFeed while setting up: the apps and kinds of things that pull you in, what you keep of
+              each app, when it gets you, how often you open apps without deciding to, your guess at your daily phone
+              time, what you would rather be doing and your reason in your own words, how much time you want back and
+              how firm you chose to be, and the tone of your block screen. The screen time ByeFeed measures on your
+              phone is not included.</li>
+          </ul>
+          <p>The websites and keywords in the backup are the ones <strong>you chose to block</strong>. They are part of
+            your settings, not a record of anything you visited. The backup never contains the web addresses you open,
+            your searches, the pages you view or your detailed app usage.</p>
+
+          <h3 id="purchase-info">Purchase information</h3>
+          <p>If you buy Pro, Google Play handles the payment. What we receive and keep is described in <a
+              href="#payments">Payments and refunds</a>. In short: the purchase token and product, your plan and its
+            status, and the purchase record Google Play returns. Never your card details.</p>
+
+          <h3 id="in-app-messages">In-app messages</h3>
+          <p>The people who run ByeFeed can show a message on the app&rsquo;s Home screen, as a popup or a card: news
+            about an update, an offer, or a note about your account. There is no push service behind it. When you
+            open the app, it asks our server whether there is a message for you:</p>
+          <ul>
+            <li><strong>Without an account</strong>, the request carries nothing that identifies you, and you receive
+              only messages meant for everyone. Nothing is stored about the request.</li>
+            <li><strong>With an account</strong>, the request uses your sign-in session, so a message meant only for
+              your account, or for a group such as Pro subscribers, can reach you. A message addressed to your account
+              specifically is stored with your account ID (<a href="#database">section 5</a>).</li>
+            <li><strong>Your app version is not sent.</strong> A message meant for certain versions of the app, such
+              as a reminder to update, reaches every phone, and each phone decides for itself whether to show it.</li>
+            <li><strong>Which messages you closed stays on your phone.</strong> We don&rsquo;t record who saw, tapped
+              or closed a message. The app does report, once per message, that it was shown, its button tapped or it
+              was closed, and we keep only the totals, with no account ID or anything else that identifies you or your
+              phone.</li>
+          </ul>
+
+          <h3 id="weekly-totals">Anonymous weekly totals (only if you switch them on)</h3>
+          <p>After your first week, the app asks once whether you want to share anonymous weekly totals. It is off
+            unless you say yes, and you can switch it off at any time in <span class="ui">Settings</span> &rarr;
+            <span class="ui">Privacy</span>. If it is on, once a week the app sends one row about the week that just
+            ended:</p>
+          <ul>
+            <li>how many days you won and how many days counted (0 to 7);</li>
+            <li>how many blocking groups you had on, as 0, 1, 2 or 3 or more;</li>
+            <li>how often a block screen ended in you going back rather than pausing, in quarters (such as
+              &ldquo;75 to 100%&rdquo;);</li>
+            <li>how many of your blocking groups are strict and how many use sessions (up to 3 each);</li>
+            <li>the app version and the date the week started.</li>
+          </ul>
+          <p>The row contains <strong>no account ID, device ID, apps, sites, times or anything else that identifies you
+            or your phone</strong>, and it is sent the same way with or without an account. Two rows from the same
+            phone can&rsquo;t be linked to each other. The people who run ByeFeed see only totals across everyone, never
+            a single row. Rows are deleted after two years.</p>
+
+          <h3 id="circles">Circles (only if you join one)</h3>
+          <p>A circle is a small group of 2 to 10 people who know each other and keep their pacts together. Circles
+            are optional and off until you join or make one. Joining needs an account; an account with no email
+            address is enough.</p>
+          <p><strong>What the other people in your circles see:</strong></p>
+          <ul>
+            <li>the handle you pick (it doesn&rsquo;t have to be your name) and your hand;</li>
+            <li>for each day, whether you won it, lost it, took a rest day, or it didn&rsquo;t count;</li>
+            <li>the titles of your pacts, but only if you switch on <span class="ui">Share pact titles</span> for
+              that circle. It is off unless you turn it on;</li>
+            <li>the cheers you send them (&ldquo;Nice one&rdquo;, &ldquo;You&rsquo;ve got this&rdquo; or
+              &ldquo;Comeback!&rdquo;). There is no chat.</li>
+          </ul>
+          <p><strong>Never shared with a circle:</strong> which apps, sites or keywords you block, when you pause, what
+            you typed, what got you, your statistics, your screen time or your email address.</p>
+          <p><strong>What we store for circles:</strong> your account ID with your handle and hand; each circle&rsquo;s
+            name, invite code and who made it; who is in which circle, since when, and whether they share pact titles;
+            your day statuses, with the time our server received each one; and cheers, with who sent them, to whom,
+            for which day and which cheer. The app sends your day statuses when you open it, and only for the last
+            two days: older days can&rsquo;t be added or changed, which keeps the board fair. Our server, not your
+            phone, stamps when each one arrived.</p>
+          <p><strong>Leaving and deleting:</strong> you can leave a circle at any time in the app. Leaving your last
+            circle deletes your handle, your hand and your day statuses from our database. Day statuses older than 35
+            days and cheers older than 30 days are deleted automatically. Deleting your account deletes all of it. An
+            account with no email address that is in a circle isn&rsquo;t removed after 90 days without activity (<a
+              href="#retention">section 9</a>), so your circle doesn&rsquo;t lose you; leaving the circle ends that.</p>
+
+          <h3 id="seasonal">Seasonal challenges</h3>
+          <p>The app downloads the list of the month&rsquo;s seasonal challenges and their totals, such as
+            &ldquo;12,480 days won so far&rdquo;. The request carries nothing about you. Joining a challenge happens on
+            your phone. While you are in one, each day you win adds one to that challenge&rsquo;s total: the app sends
+            only which challenge and which day, with no account ID, device ID or anything else that identifies you,
+            and we keep only the running total. Anyone could add to a total by hand, so the totals are indicative. Leaving
+            the challenge stops it.</p>
+
+          <h3 id="push">Circle notifications (only if you switch them on)</h3>
+          <p>If you are in a circle, you can switch on notifications for cheers and ally requests. Only then, the app
+            gets a <strong>device token</strong> from Firebase Cloud Messaging, Google&rsquo;s notification service,
+            and stores it with your account ID, so our server can send your phone a notification when someone in your
+            circle cheers you or asks you to be their ally. The notification says who (by their handle) and which
+            cheer. The token is deleted when you switch notifications off, sign out or delete your account. Firebase
+            processes the token and the notification to deliver it (<a href="#third-parties">section 12</a>). Without
+            this switch, ByeFeed never contacts Firebase.</p>
+
+          <h3 id="suggested-lines">Suggested lines in Studio (only if you ask)</h3>
+          <p>In Block Screen Studio, <span class="ui">Suggest a line</span> can write three lines for your block screen.
+            The first time, the app tells you what it sends and asks you to agree. When you tap it, the app sends
+            <strong>only the goal you typed (up to 120 characters) and the tone you picked</strong> to our server
+            function, which asks Anthropic&rsquo;s Claude model for lines and returns them. Nothing else is sent: not
+            your blocking groups, apps, sites, pacts or anything about you. Neither the text you sent nor the lines
+            that come back are stored by us. To stop abuse, our function counts requests for an hour, per account if
+            you have one, or otherwise per a one-way hash of your IP address, and keeps nothing else. Anthropic
+            processes the request under its own commercial terms (<a href="#third-parties">section 12</a>).</p>
+
+          <h3 id="support-info">Support emails</h3>
+          <p>If you email us, we receive your email address, your message and anything you choose to include, such as a
+            problem report from the app. We use it only to help you.</p>
+        </section>
+
+        <section id="on-device" aria-labelledby="h-on-device">
+          <h2 id="h-on-device">4. Information processed on your phone only</h2>
+          <p>Blocking is decided entirely on your phone. ByeFeed only watches for the triggers you set up, and ignores
+            everything else. Nothing from these checks is stored, and nothing is sent to us or anyone else.</p>
+
+          <h3 id="detection">How ByeFeed detects what to block</h3>
+          <p>ByeFeed uses Android&rsquo;s accessibility service, the system feature for apps that respond to what
+            happens on screen. It is turned on only after you accept a separate notice in the app, and you can turn it
+            off at any time in Android&rsquo;s Accessibility settings.</p>
+          <p>Android lets ByeFeed know when the app or screen in front of you changes. Each time, ByeFeed runs only the
+            checks your block list needs:</p>
+          <ul>
+            <li><strong>Blocked apps.</strong> It checks which app just came to the front against the apps you chose to
+              block.</li>
+            <li><strong>Blocked websites and keywords.</strong> In supported browsers (Chrome, Samsung Internet,
+              Firefox, Edge, Brave, Opera, DuckDuckGo, Vivaldi and Kiwi), it checks the address in the address bar
+              against your blocked sites and keywords. While you are typing in the address bar it waits, so a half-typed
+              address never counts.</li>
+            <li><strong>Adult websites</strong>, only if you switch this on for a blocking group. The same address is
+              also checked against a public list of adult sites kept on your phone (see <a
+                href="#third-parties">section 12</a>). The block screen and your pause history say &ldquo;Adult
+              website&rdquo; rather than naming the site.</li>
+            <li><strong>Short-form feeds.</strong> In the apps where you switched a feed off, it looks for the specific
+              screen elements that mark that feed, such as the Reels player, by their built-in names and labels. It
+              stops as soon as it finds one.</li>
+            <li><strong>Other apps&rsquo; built-in browsers</strong>, only if you turn this on. When you open a web page
+              inside another app, it checks that page for your blocked sites and keywords. Some apps never show the
+              page&rsquo;s address, so it also reads the text on screen in other apps and the text of what you tap there,
+              such as a chat with a link, to recognise the link before the page opens.</li>
+          </ul>
+          <p>If something matches, the block screen appears. If nothing matches, ByeFeed does nothing. Either way the
+            result is used once and discarded: nothing is saved, logged or uploaded, no browsing history is built, and
+            ByeFeed never records what you type in other apps. When a block screen appears, ByeFeed notes that a block
+            happened, when, which of your blocking groups it came from and what you chose on it (go back, pause, start
+            or skip a session, use earned minutes or an emergency unlock), but not the app, site or keyword that
+            matched.</p>
+
+          <h3>Usage access</h3>
+          <p>If you allow <strong>usage access</strong>, ByeFeed reads how long you spend in each app to show your
+            statistics, and uses it to recognise the app in front of you more reliably. If you tap <span
+              class="ui">See your actual screen time</span> during setup and turn usage access on, it also adds up
+            your screen time from the last 7 days to show you your daily average and your top 3 apps. You can skip
+            this; setup never asks for usage access unless you choose to see it. This usage data stays on your phone. Only the
+            statistics counters listed above are part of the cloud backup.</p>
+
+          <h3>Data stored on your phone</h3>
+          <p>The app keeps its working data in its private storage on your phone: your block groups and settings,
+            statistics, pause history, a log of blocks with what you chose on each block screen and, if you use that
+            style, what you said you came for, your pacts, challenges, stamps and scheduled reminders, your focus
+            sessions and earned minutes, how many emergency unlocks you have used this week, your Studio screens and
+            the pictures you chose for them (copied into the app&rsquo;s storage, and never uploaded), your hand, your
+            days (see
+            <a href="#backup-data">section 3</a>), the dates on which blocking was running (so a day your phone was
+            off is never counted as won), per-app open counts, your PIN hash, the Google Play purchase
+            token (so Pro works offline and without an account), the in-app messages it last received with which
+            ones you closed, and the list of adult sites if a blocking group uses it. Other apps can&rsquo;t read it. Uninstalling ByeFeed,
+            clearing its data in Android&rsquo;s settings, or using <span class="ui">Delete account</span> or <span
+              class="ui">Clear data</span> removes it.</p>
+          <p>Your patterns (when and why you pause, and the suggestion that comes with them) are worked out on your
+            phone from this data, and never sent anywhere.</p>
+          <p>ByeFeed turns off Android&rsquo;s automatic app backup, so none of this is copied to your Google Drive
+            backup.</p>
+        </section>
+
+        <section id="database" aria-labelledby="h-database">
+          <h2 id="h-database">5. Information stored in our database</h2>
+          <p>Our backend runs on <strong>Supabase</strong>, which provides the authentication service and a PostgreSQL
+            database. This is every place data about an account is stored:</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Database records">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Record</th>
+                  <th scope="col">What it contains</th>
+                  <th scope="col">Who can read it</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Account</th>
+                  <td>Account ID, email address, password hash (email accounts), Google sign-in details (Google
+                    accounts), and when it was created and last signed in</td>
+                  <td>Supabase&rsquo;s authentication service</td>
+                </tr>
+                <tr>
+                  <th scope="row">Profile</th>
+                  <td>Account ID, whether Pro is on, and when it was created and updated</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Backup</th>
+                  <td>Your ByeFeed setup (see <a href="#backup-data">section 3</a>), its format version and when it was
+                    last updated</td>
+                  <td>Only your own signed-in account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Subscription</th>
+                  <td>Plan, product, Google Play purchase token, status, auto-renew, end of the current period, start
+                    date, and the purchase record returned by Google Play</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Code redemptions</th>
+                  <td>The code you redeemed, when, and when its Pro ends</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Redemption attempts</th>
+                  <td>Codes tried and when, to stop guessing. Deleted after 24 hours</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Account transfer tokens</th>
+                  <td>A single-use token, used when you add an email or Google account that already has a ByeFeed
+                    account. No personal data; expires after 15 minutes</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Admin actions</th>
+                  <td>Changes the people who run ByeFeed make to an account in our admin dashboard, such as turning Pro
+                    on as a make-good: the account ID, what changed, who changed it, when, and the reason they gave</td>
+                  <td>The people who run ByeFeed</td>
+                </tr>
+                <tr>
+                  <th scope="row">Circle profile</th>
+                  <td>Account ID, your handle and your hand, while you are in at least one circle</td>
+                  <td>You, and the people in your circles (handle and hand only)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Circles and memberships</th>
+                  <td>Each circle&rsquo;s name, invite code and who made it; who is in it, since when, and whether they
+                    share pact titles</td>
+                  <td>The people in that circle</td>
+                </tr>
+                <tr>
+                  <th scope="row">Day statuses</th>
+                  <td>Account ID, the day, won, lost, rest or not counted, your pact titles only if you share them, and
+                    when our server received it. Deleted after 35 days</td>
+                  <td>You, and the people in your circles</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cheers</th>
+                  <td>Who sent it, to whom, for which day, which cheer and when. Deleted after 30 days</td>
+                  <td>The sender and the person cheered</td>
+                </tr>
+                <tr>
+                  <th scope="row">Device tokens</th>
+                  <td>Account ID and the Firebase Cloud Messaging token of each phone with circle notifications on</td>
+                  <td>Our server functions only</td>
+                </tr>
+                <tr>
+                  <th scope="row">Messages addressed to you</th>
+                  <td>An in-app message the people who run ByeFeed sent to your account specifically, and your account
+                    ID. Messages sent to everyone or to a group are not linked to any account</td>
+                  <td>Your own signed-in account, and the people who run ByeFeed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The database also holds housekeeping records with no personal data: counts of inactive accounts removed by
+            the cleanup job described in <a href="#retention">section 9</a> (kept for two years, with no account IDs),
+            the anonymous totals for each in-app message (how many times it was shown, its button tapped and closed,
+            with no account IDs), the anonymous weekly totals from people who switched them on (see <a
+              href="#weekly-totals">section 3</a>; no account or device IDs), the seasonal challenges and their running
+            totals (no account or device IDs), how many suggested-line requests an account or a hashed IP address made
+            in the last hour (no text, deleted after a day), counts of notifications sent (no content), and a heartbeat
+            that keeps the database active.</p>
+        </section>
+
+        <section id="technical" aria-labelledby="h-technical">
+          <h2 id="h-technical">6. Device and technical information</h2>
+          <ul>
+            <li><strong>No device identifiers.</strong> ByeFeed doesn&rsquo;t collect your advertising ID, Android ID,
+              IMEI, serial number or phone number.</li>
+            <li><strong>Problem reports are yours to send.</strong> A report from <span class="ui">Report a
+                problem</span> contains technical details about your phone and the app (see <a href="#support">section
+                19</a>). It only reaches us if you choose to send it.</li>
+            <li><strong>IP addresses.</strong> When the app connects to Supabase (to sign in, back up, verify a purchase,
+              redeem a code or check for in-app messages), Supabase receives your IP address as part of the connection. It may keep it in its
+              service logs for security and operation, and its sign-in log can include the IP address used. We
+              don&rsquo;t use IP addresses to locate you or build a profile of you.</li>
+            <li><strong>Crash reports through Google.</strong> ByeFeed has no crash-reporting service of its own. If you
+              allow your phone to share usage and diagnostics with Google, Android may report ByeFeed crashes to Google,
+              and we can see them as crash reports in the Google Play Console. These contain technical details such as
+              the phone model, Android version and the error, not your name or contact details.</li>
+            <li><strong>No analytics.</strong> ByeFeed doesn&rsquo;t measure how you use the app, and neither does this
+              website. The exceptions are the anonymous totals for in-app messages described in <a
+                href="#in-app-messages">section 3</a>, which say how a message did, never who saw it, and the
+              anonymous weekly totals, which are off unless you switch them on (<a href="#weekly-totals">section
+                3</a>).</li>
+          </ul>
+        </section>
+
+        <section id="cookies" aria-labelledby="h-cookies">
+          <h2 id="h-cookies">7. Cookies and local storage</h2>
+          <p><strong>This website</strong> sets no cookies, runs no analytics and loads nothing from other companies:
+            its fonts, images and scripts are all served from byefeed.app. Your browser&rsquo;s local storage is used
+            for two preferences, and only if you set them: the country you pick in the pricing section
+            (<code>bf-country</code>) and the light or dark theme you choose with the theme button
+            (<code>bf-theme</code>). They stay in your browser, are never sent to us, and you can clear them with your
+            browser&rsquo;s site data. The website is hosted by GitHub (GitHub Pages), which receives the standard
+            information any web server sees, such as your IP address and browser type, in order to deliver the pages and
+            keep them secure, under <a
+              href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&rsquo;s
+              Privacy Statement</a>.</p>
+          <p><strong>The app</strong> uses no cookies or advertising identifiers. It stores its own data on your phone
+            as described in <a href="#on-device">section 4</a>, including your sign-in session if you have an account.
+          </p>
+        </section>
+
+        <section id="purposes" aria-labelledby="h-purposes">
+          <h2 id="h-purposes">8. Why we use it</h2>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Purposes">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Information</th>
+                  <th scope="col">What we use it for</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Account and sign-in details</th>
+                  <td>Signing you in, keeping your backup private to you, and confirming that a request about the
+                    account really comes from you</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cloud backup</th>
+                  <td>Restoring your setup on a new phone or after reinstalling, and keeping your devices in sync</td>
+                </tr>
+                <tr>
+                  <th scope="row">Purchase records</th>
+                  <td>Confirming that a purchase is genuine and active, unlocking Pro, keeping its status current
+                    through renewals, cancellations and refunds, and stopping one purchase being claimed by two accounts
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Code redemptions</th>
+                  <td>Granting Pro for the code&rsquo;s period and limiting guessing</td>
+                </tr>
+                <tr>
+                  <th scope="row">In-app messages</th>
+                  <td>Telling you about updates, offers and anything about your account, and seeing, in anonymous
+                    totals, whether a message was useful</td>
+                </tr>
+                <tr>
+                  <th scope="row">Anonymous weekly totals</th>
+                  <td>Seeing, across everyone who shares them, whether ByeFeed helps: how many days people win and
+                    how often a block screen ends in going back</td>
+                </tr>
+                <tr>
+                  <th scope="row">Circles, cheers and circle notifications</th>
+                  <td>Showing your circle who kept their days and how close the circle is to its goal, and telling you
+                    when someone cheers you or asks you to be their ally</td>
+                </tr>
+                <tr>
+                  <th scope="row">Seasonal challenge totals</th>
+                  <td>Showing everyone in a challenge how many days have been won in it</td>
+                </tr>
+                <tr>
+                  <th scope="row">Suggested lines</th>
+                  <td>Writing block screen lines you asked for; the request counts only limit abuse</td>
+                </tr>
+                <tr>
+                  <th scope="row">On-phone blocking checks and usage time</th>
+                  <td>Enforcing your blocks and limits and showing your own statistics</td>
+                </tr>
+                <tr>
+                  <th scope="row">Support emails and problem reports</th>
+                  <td>Answering you and fixing problems</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>We don&rsquo;t use any of it for advertising or to build profiles of you.</p>
+        </section>
+
+        <section id="retention" aria-labelledby="h-retention">
+          <h2 id="h-retention">9. How long it is kept</h2>
+          <ul>
+            <li><strong>Email and Google accounts</strong>, with their backup, purchase and redemption records: until
+              you delete the account.</li>
+            <li><strong>Accounts with no email address</strong>: until you delete them with <span class="ui">Clear
+                data</span>, or <strong>automatically after 90 days without activity</strong>, unless the account holds
+              Pro through a subscription or an unlock code, or is in a circle. Activity means the app refreshing its
+              sign-in, saving a backup or redeeming a code. The cleanup runs once a week.</li>
+            <li><strong>Circles</strong>: your handle, hand and day statuses until you leave your last circle; day
+              statuses older than 35 days and cheers older than 30 days are deleted automatically. A circle is deleted
+              when its last member leaves.</li>
+            <li><strong>Device tokens</strong>: until you switch circle notifications off, sign out or delete the
+              account.</li>
+            <li><strong>Seasonal challenge totals</strong>: until the challenge is removed. They can&rsquo;t be deleted
+              on request, because nothing in them says whose they are.</li>
+            <li><strong>Suggested-line request counts</strong>: one day. The text is never kept.</li>
+            <li><strong>Failed code attempts</strong>: 24 hours.</li>
+            <li><strong>Admin actions</strong>: two years. If the account is deleted, its entries lose the account ID,
+              so they no longer point to anyone.</li>
+            <li><strong>Account transfer tokens</strong>: they expire 15 minutes after they are created, and are deleted
+              with the account they came from.</li>
+            <li><strong>Messages addressed to your account</strong>: until the people who run ByeFeed delete the
+              message, or you delete the account. The anonymous totals for a message are deleted with it.</li>
+            <li><strong>Anonymous weekly totals</strong>: two years. They can&rsquo;t be deleted on request, because
+              nothing in them says whose they are; switching them off stops any more being sent.</li>
+            <li><strong>Verification codes</strong>: they expire after 15 minutes.</li>
+            <li><strong>Support emails</strong>: as long as needed to help you and to keep a record of requests we acted
+              on, such as deletion requests.</li>
+            <li><strong>Data on your phone</strong>: until you delete your account, use <span class="ui">Clear
+                data</span>, clear the app&rsquo;s data in Android&rsquo;s settings or uninstall ByeFeed.</li>
+            <li><strong>Database backups</strong>: see <a href="#backups">section 17</a>.</li>
+            <li><strong>Records Google keeps about your purchase</strong>: kept by Google under its own policies.</li>
+          </ul>
+        </section>
+
+        <section id="deletion" aria-labelledby="h-deletion">
+          <h2 id="h-deletion">10. Account and data deletion</h2>
+          <p>You can delete your account yourself, inside the app, at any time:</p>
+          <ul>
+            <li><strong>Email or Google account:</strong> <span class="ui">Settings</span> &rarr; your email address
+              under Account &rarr; <span class="ui">Delete account</span>.</li>
+            <li><strong>Account with no email:</strong> <span class="ui">Settings</span> &rarr; <span class="ui">No
+                account attached</span> &rarr; <span class="ui">Clear data</span>.</li>
+          </ul>
+          <p>Both delete your account <strong>immediately</strong>. Deleting the account also deletes every record
+            linked to it: your profile, cloud backup, subscription record, code redemptions, transfer tokens,
+            messages addressed to you, your circle profile, memberships, day statuses, the cheers you sent and received,
+            and your device tokens, and it removes your account ID from any admin action entries. A circle you made
+            passes to its longest-standing member, or is deleted if you were the last. The app then resets your phone to a fresh install of
+            ByeFeed.</p>
+          <p>What deletion doesn&rsquo;t touch:</p>
+          <ul>
+            <li><strong>Your Google Play subscription.</strong> It isn&rsquo;t cancelled or refunded. Cancel it in the
+              <a href="https://play.google.com/store/account/subscriptions">Play Store</a>.</li>
+            <li><strong>Google&rsquo;s own records</strong> of your purchase, which Google keeps under its own policies.
+            </li>
+            <li><strong>Database backups</strong> made before the deletion, until they expire (see <a
+                href="#backups">section 17</a>).</li>
+          </ul>
+          <p>Signing out or uninstalling the app does <strong>not</strong> delete your account. If you can&rsquo;t use
+            the app, you can ask us to delete the account by email. The <a href="../delete-account/index.html">Delete
+              Account page</a> explains every route step by step.</p>
+        </section>
+
+        <section id="access" aria-labelledby="h-access">
+          <h2 id="h-access">11. Who can access your data</h2>
+          <ul>
+            <li><strong>You</strong>, through the app. The database only lets a signed-in account read and write its own
+              backup.</li>
+            <li><strong>The people in your circles</strong>, only what <a href="#circles">section 3</a> lists, and only
+              for circles you are both in.</li>
+            <li><strong>Bros Dolz LLC</strong>: the people who run ByeFeed can access the database through
+              Supabase&rsquo;s administration tools and our own admin dashboard, and do so when needed to run the
+              service, answer a support or privacy request, act on a deletion request, or look into a problem. The
+              dashboard needs a password and a second sign-in step, shows only what those tasks need (it never shows
+              what is inside your cloud backup), and records every change made through it, including every in-app
+              message it sends.</li>
+            <li><strong>Our service providers</strong> (<a href="#third-parties">section 12</a>), only as needed to
+              provide their service to us.</li>
+            <li><strong>Authorities</strong>, only where the law requires us to disclose information.</li>
+          </ul>
+        </section>
+
+        <section id="third-parties" aria-labelledby="h-third-parties">
+          <h2 id="h-third-parties">12. Third-party technologies and services</h2>
+          <p>ByeFeed uses a small number of outside services. Each receives only what it needs to do its job:</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="Third-party services">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Service</th>
+                  <th scope="col">What it does for ByeFeed</th>
+                  <th scope="col">What it may process</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Supabase</th>
+                  <td>Accounts and sign-in, the PostgreSQL database, and the server functions that verify purchases and
+                    receive Google Play updates</td>
+                  <td>Account ID, email address, password hash, Google sign-in details, your cloud backup, purchase and
+                    redemption records, and the IP address of each connection</td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Sign-In</th>
+                  <td>Lets you sign in with your Google account, using the account picker on your phone</td>
+                  <td>Your Google account&rsquo;s email address and basic profile, and the sign-in token. Covered by <a
+                      href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Play Billing and the Google Play Developer API</th>
+                  <td>Takes payments and runs subscriptions. Our server asks Google Play whether a purchase is genuine,
+                    and Google Play tells our server about renewals, cancellations and refunds</td>
+                  <td>Google handles your payment details. We exchange the purchase token and product with Google, and
+                    the app gives Google Play your Account ID with each purchase so Google can link the purchase to your
+                    account</td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Play and Android</th>
+                  <td>Distribute and update the app, and may send crash reports if you allow it</td>
+                  <td>As described by Google; see <a href="#technical">section 6</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Workspace (email)</th>
+                  <td>Delivers the 6-digit codes we email you for sign-up, password reset and email changes</td>
+                  <td>Your email address and the email it delivers</td>
+                </tr>
+                <tr>
+                  <th scope="row">Firebase Cloud Messaging (Google)</th>
+                  <td>Delivers circle notifications, only if you switch them on</td>
+                  <td>The device token, a Firebase installation identifier it creates for your copy of the app, and each
+                    notification (who cheered, which cheer). Covered by <a
+                      href="https://firebase.google.com/support/privacy">Firebase&rsquo;s privacy information</a> and <a
+                      href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">Anthropic (Claude API)</th>
+                  <td>Writes suggested lines for Studio, only when you tap <span class="ui">Suggest a line</span></td>
+                  <td>The goal you typed and the tone you picked, sent by our server function without your account ID or
+                    IP address. Covered by Anthropic&rsquo;s commercial terms and <a
+                      href="https://www.anthropic.com/legal/privacy">privacy policy</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">GitHub (GitHub Pages)</th>
+                  <td>Hosts this website, byefeed.app</td>
+                  <td>Standard web request information, such as IP address and browser type. Covered by <a
+                      href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&rsquo;s
+                      Privacy Statement</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">GitHub and jsDelivr (adult sites list)</th>
+                  <td>Serve the public list of adult sites (HaGeZi&rsquo;s NSFW list) that the app downloads about once
+                    a week, only while a blocking group has Adult websites switched on. The app tries GitHub first and
+                    jsDelivr if GitHub can&rsquo;t be reached</td>
+                  <td>Standard web request information, such as IP address. The request carries nothing about you or
+                    your blocking groups, and the list is checked on your phone. Covered by <a
+                      href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&rsquo;s
+                      Privacy Statement</a> and jsDelivr&rsquo;s privacy policy</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Email you send to support@brosdolz.com is received and handled by Bros Dolz LLC itself. ByeFeed also
+            includes open-source libraries that run only on your phone and send nothing anywhere, for example its local
+            database and its network-status check.</p>
+          <p><strong>Not used:</strong> ByeFeed contains no analytics services (such as Firebase Analytics or Google
+            Analytics), no crash-reporting services (such as Crashlytics or Sentry), no advertising networks or SDKs and
+            no social-media SDKs. Firebase is used only for circle notifications you switch on. The only thing ever
+            sent to an AI model is what <a href="#suggested-lines">Suggest a line</a> sends, when you ask for it.</p>
+        </section>
+
+        <section id="no-selling" aria-labelledby="h-no-selling">
+          <h2 id="h-no-selling">13. No selling, renting or advertising</h2>
+          <p>We don&rsquo;t sell, rent or trade personal data. We don&rsquo;t share it with anyone for advertising or
+            marketing. There is no advertising in ByeFeed and no advertising identifier is collected. ByeFeed is paid
+            for by Pro, not by your data.</p>
+        </section>
+
+        <section id="does-not" aria-labelledby="h-does-not">
+          <h2 id="h-does-not">14. What ByeFeed does not do</h2>
+          <ul>
+            <li>It doesn&rsquo;t show ads or include any advertising SDK.</li>
+            <li>It doesn&rsquo;t include analytics, tracking or crash-reporting SDKs.</li>
+            <li>It doesn&rsquo;t collect your advertising ID, Android ID, IMEI, serial number or phone number.</li>
+            <li>It doesn&rsquo;t keep or upload your browsing history, searches or the pages you view.</li>
+            <li>It doesn&rsquo;t keep or upload anything from its blocking checks.</li>
+            <li>It doesn&rsquo;t record what you type in other apps.</li>
+            <li>It doesn&rsquo;t access your location, camera, microphone, contacts, SMS or call logs. It opens a
+              photo or file only when you pick one yourself for a Studio screen, and then only that one.</li>
+            <li>It doesn&rsquo;t use your fingerprint, face or any other biometric data.</li>
+            <li>It doesn&rsquo;t sell your data or share it for advertising.</li>
+            <li>It doesn&rsquo;t send your data to AI services. Suggest a line sends only the goal you typed and a
+              tone, when you ask.</li>
+            <li>It doesn&rsquo;t lock, wipe or otherwise control your phone.</li>
+            <li>It doesn&rsquo;t copy its data into your Google Drive backup.</li>
+          </ul>
+        </section>
+
+        <section id="permissions" aria-labelledby="h-permissions">
+          <h2 id="h-permissions">15. App permissions</h2>
+          <p>ByeFeed is a blocker, so it asks for some powerful permissions. Each is asked for when a feature you are
+            using needs it, and the app tells you whether that feature needs it or just works better with it. This is
+            every permission the app declares:</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-label="App permissions">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Permission</th>
+                  <th scope="col">What ByeFeed uses it for</th>
+                  <th scope="col">Needed?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Accessibility service</th>
+                  <td>Detecting the triggers you set (a blocked app opening, a blocked website or keyword in your
+                    browser, a short-form feed you switched off) and showing the block screen. <a href="#detection">How
+                      it works</a></td>
+                  <td>Yes, for blocking. You turn it on yourself after a separate notice</td>
+                </tr>
+                <tr>
+                  <th scope="row">Usage access</th>
+                  <td>Measuring time in each app for your statistics, and recognising the app in front of you more
+                    reliably</td>
+                  <td>For statistics. Blocking works without it</td>
+                </tr>
+                <tr>
+                  <th scope="row">Display over other apps</th>
+                  <td>Showing the block screen, session prompts and the session timer on top of other apps</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Foreground service</th>
+                  <td>Keeping blocking running in the background, with the ongoing notification Android requires</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <th scope="row">Notifications</th>
+                  <td>The &ldquo;blocking is on&rdquo; notification, time left in a session, blocking paused,
+                    reminders about missing permissions, and your progress: the weekly recap, pact reminders, the
+                    evening before a rest day, a finished focus session and an emergency unlock that is ready. They are
+                    scheduled on your phone. The only notifications sent from our servers are circle notifications,
+                    and only if you switch them on. Each can be switched off in your phone&rsquo;s settings</td>
+                  <td>Optional</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ignore battery optimisation</th>
+                  <td>Stopping Android from shutting down blocking in the background</td>
+                  <td>Optional, recommended</td>
+                </tr>
+                <tr>
+                  <th scope="row">Run at startup</th>
+                  <td>Starting blocking again after your phone restarts or the app updates</td>
+                  <td>Granted automatically</td>
+                </tr>
+                <tr>
+                  <th scope="row">Device admin</th>
+                  <td>Only for <span class="ui">Prevent Uninstall</span>: stopping ByeFeed being uninstalled while that
+                    setting is on. It declares no other device-admin powers</td>
+                  <td>Optional, off unless you turn it on</td>
+                </tr>
+                <tr>
+                  <th scope="row">Internet and network state</th>
+                  <td>Signing in, backing up, verifying purchases, and retrying a backup when your connection comes back
+                  </td>
+                  <td>Granted automatically</td>
+                </tr>
+                <tr>
+                  <th scope="row">Google Play billing</th>
+                  <td>Buying Pro</td>
+                  <td>Granted automatically</td>
+                </tr>
+                <tr>
+                  <th scope="row">Visibility of launchable apps</th>
+                  <td>Listing the apps on your phone that have a launcher icon, so you can pick which to block. ByeFeed
+                    doesn&rsquo;t request access to the full list of installed packages</td>
+                  <td>Granted automatically</td>
+                </tr>
+                <tr>
+                  <th scope="row">Biometric and fingerprint</th>
+                  <td>Added automatically by Android&rsquo;s Credential Manager library, which Google sign-in uses.
+                    ByeFeed itself never shows a fingerprint or face prompt and never uses your biometric data</td>
+                  <td>Not used by ByeFeed</td>
+                </tr>
+                <tr>
+                  <th scope="row">Internal app permission</th>
+                  <td>Created automatically by an Android support library so ByeFeed&rsquo;s own components can signal
+                    each other privately. Only ByeFeed holds it, and it gives no access to your data</td>
+                  <td>Granted automatically</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><strong>Never requested:</strong> location, camera, microphone, contacts, SMS, call logs, calendar, photos,
+            files or storage, and the full list of installed apps (<code>QUERY_ALL_PACKAGES</code>). A Studio picture
+            is picked with Android&rsquo;s own picker, which needs no permission and gives ByeFeed only the one picture
+            you choose.</p>
+        </section>
+
+        <section id="security" aria-labelledby="h-security">
+          <h2 id="h-security">16. Security</h2>
+          <ul>
+            <li><strong>Encryption.</strong> Everything the app sends to our backend travels over HTTPS (TLS). Supabase
+              encrypts the database at rest.</li>
+            <li><strong>Row-level security.</strong> Every table in the database has row-level security turned on. A
+              signed-in account can read and write only its own backup. Purchase, profile and redemption records
+              can&rsquo;t be read or changed by the app at all, only by our server functions.</li>
+            <li><strong>Least privilege.</strong> The app&rsquo;s database roles hold only the permissions they use, and
+              functions that run with extra rights are locked down. The administrative key for the database is never
+              included in the app.</li>
+            <li><strong>Verified purchases.</strong> Pro is unlocked only after our server confirms a purchase with
+              Google Play, and one purchase can&rsquo;t be claimed by two accounts.</li>
+            <li><strong>Limits.</strong> Each backup is capped at 2&nbsp;MB, and sign-in and code redemption are
+              rate-limited.</li>
+            <li><strong>Passwords and PIN.</strong> Passwords are stored as bcrypt hashes by Supabase. Your PIN is
+              stored as a SHA-256 hash, never as the digits.</li>
+            <li><strong>Reviews.</strong> We audited the backend&rsquo;s access controls in July 2026 and fixed what we
+              found.</li>
+          </ul>
+          <p>No system is perfectly secure. If you believe you have found a security problem, please email <a
+              href="mailto:support@brosdolz.com">support@brosdolz.com</a>.</p>
+        </section>
+
+        <section id="backups" aria-labelledby="h-backups">
+          <h2 id="h-backups">17. Backups</h2>
+          <p>&ldquo;Backup&rdquo; means two different things here:</p>
+          <ul>
+            <li><strong>Cloud backup</strong> is the app feature: the copy of your ByeFeed setup kept with your account
+              (<a href="#backup-data">section 3</a>). For an account with no email address, created by redeeming a code,
+              it is kept for up to 90 days without activity (unless the account holds Pro). For an email or Google
+              account, it is kept until you decide to delete the account. Either way, it is deleted the moment the
+              account is.</li>
+            <li><strong>Database backups</strong> are copies of the whole database that exist so it can be recovered
+              after a hardware failure, a mistake or a security incident.</li>
+          </ul>
+          <p>Our database is hosted by Supabase, and database backups are made by Supabase as part of its hosting
+            service, according to the service plan we use. Before we change the structure of the database, we may also
+            take a one-off backup through Supabase.</p>
+          <!-- CONFIRM (optional): the exact number of days Supabase keeps database backups on the plan in use. -->
+          <p>Database backups are kept only for a limited period and then expire on their own. If you delete your
+            account, copies of its data can remain in database backups made before the deletion until those backups
+            expire. Backups exist only so the service can be recovered.</p>
+        </section>
+
+        <section id="payments" aria-labelledby="h-payments">
+          <h2 id="h-payments">18. Payments and refunds</h2>
+          <h3>Who processes payments</h3>
+          <p>ByeFeed Pro is sold only through <strong>Google Play</strong>, using Google Play Billing. There is no other
+            payment provider. Google processes the payment and holds your payment details under <a
+              href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice">Google
+              Payments&rsquo; privacy notice</a>.</p>
+          <h3>What ByeFeed receives</h3>
+          <p><strong>We never receive or store your card number, bank details or billing address.</strong> When you buy
+            Pro:</p>
+          <ul>
+            <li>Google Play gives the app a <strong>purchase token</strong> and the product you bought. The app keeps
+              them on your phone, which lets Pro work offline and without an account. Without a network connection, Pro
+              keeps working for up to 7 days before the purchase is checked again.</li>
+            <li>If you have an account, the app sends the token and product to our server, which asks Google Play
+              whether the purchase is genuine and active. We then store your plan (monthly, yearly or lifetime), the
+              product, the purchase token, its status (for example active, cancelled, expired or refunded), whether it
+              auto-renews, the end of the current period and when it started, together with the <strong>purchase record
+                Google Play returns</strong>. That record includes details such as the order number, the country of
+              purchase, and the purchase, renewal and expiry times.</li>
+            <li>Google Play keeps our server informed about renewals, cancellations, refunds and other changes to that
+              purchase.</li>
+            <li>With each purchase, the app gives Google Play your <strong>Account ID</strong> (if you have an account),
+              so the purchase can be linked to your account.</li>
+          </ul>
+          <p>You can buy Pro without an account. In that case nothing about the purchase is sent to us; Google Play
+            confirms it on your phone.</p>
+          <h3>Subscriptions and one-time purchases</h3>
+          <p>Pro is available as a monthly or yearly subscription, or as a one-time lifetime purchase that doesn&rsquo;t
+            renew or expire. Subscriptions renew automatically until you cancel. Prices are set per country and shown by
+            Google Play before you confirm; if Google Play offers you a free trial, it shows its length and when you
+            will be charged.</p>
+          <h3>Cancellation</h3>
+          <p>Cancel at any time in the Play Store (<strong>Payments &amp; subscriptions &rarr; Subscriptions</strong>)
+            or at <a
+              href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>.
+            <span class="ui">Manage subscription</span> in the app opens the same page. Pro stays on until the end of
+            the period you have paid for. Uninstalling ByeFeed or deleting your ByeFeed account doesn&rsquo;t cancel a
+            subscription.</p>
+          <h3>Refunds</h3>
+          <p>Refunds are handled under <strong>Google Play&rsquo;s refund policy</strong>. To request one, find the
+            purchase in your <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a>
+            and choose <strong>Request a refund</strong>, or follow Google&rsquo;s guide, <a
+              href="https://support.google.com/googleplay/answer/2479637">Get refunds on Google Play purchases</a>. If a
+            purchase is refunded, Google Play tells our server and the purchase is marked as refunded, so Pro ends for
+            that purchase.</p>
+          <!-- REPLACE: refund policy. If Bros Dolz LLC adopts refund terms of its own, replace the next paragraph with them. -->
+          <p>Bros Dolz LLC has not published separate refund terms of its own. If you think you were charged by mistake,
+            or Google can&rsquo;t help, email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a> with your
+            Google Play order number (it starts with <code>GPA.</code>) and we will look into it. Never send us card
+            details.</p>
+        </section>
+
+        <section id="support" aria-labelledby="h-support">
+          <h2 id="h-support">19. Support and diagnostics</h2>
+          <h3>Contacting support</h3>
+          <p>Email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>. Include what is needed to help you: a
+            description of the problem, your phone model and Android version, and for account or purchase questions, the
+            email address on the account, your Account ID if you have one, or your Google Play order number.
+            <strong>Never send your password, PIN, a verification code or card details.</strong> We will never ask for
+            them.</p>
+          <h3>Problem reports</h3>
+          <p>In the app, <span class="ui">Settings</span> &rarr; <span class="ui">About</span> &rarr; <span
+              class="ui">Report a problem</span> builds a report you can read before doing anything with it. It
+            contains:</p>
+          <ul>
+            <li>the date and time, the app version and build number;</li>
+            <li>your phone&rsquo;s manufacturer and model, Android version, and technical build details (build
+              fingerprint and processor type);</li>
+            <li>up to 20 recent events inside the app, such as a sign-in error message;</li>
+            <li>the details of the last crash, if there was one.</li>
+          </ul>
+          <p><span class="ui">Email report</span> opens a pre-filled email to us in your own email app, and <span
+              class="ui">Copy report</span> copies the report. <strong>Nothing is sent unless you send it.</strong></p>
+          <h3>What is collected automatically</h3>
+          <p>ByeFeed doesn&rsquo;t send diagnostic information automatically. If the app crashes, the crash details are
+            saved only on your phone, so they can go into the next problem report you choose to send. Separately,
+            Android may report crashes to Google if you allow your phone to share diagnostics (<a
+              href="#technical">section 6</a>).</p>
+          <h3>How diagnostic information is used</h3>
+          <p>Only to understand and fix the problem you reported, and to reply to you.</p>
+        </section>
+
+        <section id="rights" aria-labelledby="h-rights">
+          <h2 id="h-rights">20. Your rights and requests</h2>
+          <p>Depending on where you live, you may have the right to access the personal data we hold about you, correct
+            it, delete it, receive a copy of it, object to or restrict how we use it, and complain to your local data
+            protection authority.</p>
+          <ul>
+            <li><strong>Delete:</strong> do it yourself in the app, immediately (<a href="#deletion">section 10</a>), or
+              ask us.</li>
+            <li><strong>Correct:</strong> change your email address or password in the app under your account, or ask
+              us.</li>
+            <li><strong>Access or copy:</strong> the app has no export feature, so email us and we will send you the
+              data held about your account.</li>
+            <li><strong>Other requests:</strong> email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>.
+            </li>
+          </ul>
+          <p>So that we act only for the account holder, we reply to the email address on the account. An account with
+            no email address can be identified by the <span class="ui">Account ID</span> shown on its account page, or
+            by a Google Play order number if you bought Pro with it. We will ask for nothing more than we need to find
+            the right account.</p>
+        </section>
+
+        <section id="children" aria-labelledby="h-children">
+          <h2 id="h-children">21. Children</h2>
+          <p>ByeFeed is not directed at children and is intended for people aged 18 and over. We don&rsquo;t knowingly
+            collect personal data from children. If you believe a child has created an account, email us so we can
+            delete it.</p>
+        </section>
+
+        <section id="international" aria-labelledby="h-international">
+          <h2 id="h-international">22. Where data is processed</h2>
+          <p>Bros Dolz LLC is based in the United States. ByeFeed&rsquo;s accounts and database are hosted by Supabase
+            in its East US (Ohio) region, <code>us-east-2</code>, in the United States. If you use ByeFeed from another
+            country, your account data is transferred to and stored in the United States. Google, GitHub and, for
+            suggested lines, Anthropic may process data in other countries under their own privacy policies.</p>
+        </section>
+
+        <section id="changes" aria-labelledby="h-changes">
+          <h2 id="h-changes">23. Changes to this policy</h2>
+          <p>We may update this policy as ByeFeed changes. The &ldquo;Last updated&rdquo; date at the top shows when it
+            last changed.</p>
+        </section>
+
+        <section id="ai" aria-labelledby="h-ai">
+          <h2 id="h-ai">24. AI disclosure</h2>
+          <p>ByeFeed was built with the help of AI-assisted development tools. This does not change what data the app
+            collects or how it is handled; those practices are described above.</p>
+          <p>The app has one AI feature, and it is optional: <span class="ui">Suggest a line</span> in Block Screen
+            Studio, described in <a href="#suggested-lines">section 3</a>. It runs only when you ask, and never while
+            something is blocked. Suggested lines are only suggestions: you choose whether to use one, and can edit
+            it.</p>
+        </section>
+
+        <section id="contact" aria-labelledby="h-contact">
+          <h2 id="h-contact">25. Contact</h2>
+          <p>Questions, requests or concerns about privacy: <a
+              href="mailto:support@brosdolz.com">support@brosdolz.com</a>.</p>
+          <p>By post: Bros Dolz LLC, 418 Broadway Ste N, Albany, NY 12207-2922, United States.</p>
+        </section>
+
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../index.html"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189"
+            aria-hidden="true" focusable="false">
+            <use href="#bf-mark" />
+          </svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
+        <p>Break free from your screen.</p>
+        <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg
+            aria-hidden="true" focusable="false">
+            <use href="#i-play" />
+          </svg> Get it on Google Play</a>
+      </div>
+      <nav aria-labelledby="f-product">
+        <h2 class="footer-title" id="f-product">Product</h2>
+        <ul class="footer-links">
+          <li><a href="../index.html#features">Features</a></li>
+          <li><a href="../index.html#pricing">Pricing</a></li>
+          <li><a href="../index.html#privacy">Privacy by design</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.byefeed.app">Google Play</a></li>
+        </ul>
       </nav>
-    </details>
-
-    <article class="doc">
-
-      <section id="scope" aria-labelledby="h-scope">
-        <h2 id="h-scope">1. Introduction and scope</h2>
-        <p>ByeFeed is an app, website and short-form feed blocker for Android, made by <strong>Bros Dolz LLC</strong> (&ldquo;we&rdquo;, &ldquo;us&rdquo;). This policy covers:</p>
-        <ul>
-          <li>the ByeFeed Android app (package name <code>com.byefeed.app</code>), and</li>
-          <li>this website, <strong>byefeed.app</strong>.</li>
+      <nav aria-labelledby="f-help">
+        <h2 class="footer-title" id="f-help">Help</h2>
+        <ul class="footer-links">
+          <li><a href="../faq/index.html">FAQ</a></li>
+          <li><a href="mailto:support@brosdolz.com">Contact support</a></li>
+          <li><a href="../faq/index.html#report-a-bug">Report a problem</a></li>
         </ul>
-        <p>It explains what information each of them handles, why, where it goes, how long it is kept and what choices you have. It doesn&rsquo;t cover services you reach through the app that have their own privacy policies, such as Google Play and Google Sign-In.</p>
-        <p>Bros Dolz LLC is responsible for the data described here. You can reach us at <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>, or by post at Bros Dolz LLC, 418 Broadway Ste N, Albany, NY 12207-2922, United States.</p>
-      </section>
-
-      <section id="summary" aria-labelledby="h-summary">
-        <h2 id="h-summary">2. At a glance</h2>
-        <ul>
-          <li><strong>Blocking happens on your phone.</strong> ByeFeed only watches for the triggers on your block list and ignores everything else. Nothing it checks is stored or uploaded.</li>
-          <li><strong>An account is optional.</strong> Without one, nothing about you is uploaded to us.</li>
-          <li><strong>With an account</strong>, we store your email address and one backup of your ByeFeed setup, so you can restore it and sync it across devices.</li>
-          <li><strong>Payments go through Google Play.</strong> We never see your card or bank details.</li>
-          <li><strong>No ads, no analytics, no tracking and no crash-reporting service.</strong> We don&rsquo;t sell your data.</li>
-          <li><strong>You can delete your account inside the app.</strong> It is deleted immediately.</li>
+      </nav>
+      <nav aria-labelledby="f-legal">
+        <h2 class="footer-title" id="f-legal">Legal</h2>
+        <ul class="footer-links">
+          <li><a href="../privacy/index.html">Privacy Policy</a></li>
+          <li><a href="../delete-account/index.html">Delete your account</a></li>
         </ul>
-      </section>
-
-      <section id="collect" aria-labelledby="h-collect">
-        <h2 id="h-collect">3. Information we collect</h2>
-        <p>What we hold depends on whether you have an account. If you choose <span class="ui">Continue without an account</span> during setup, <strong>nothing is created on our servers</strong>: your setup stays on your phone and there is no record of you with us.</p>
-        <p>An account is created only when you:</p>
-        <ul>
-          <li>create one with an email address and password (confirmed with a 6-digit code we email you),</li>
-          <li>sign in with Google, or</li>
-          <li>redeem an unlock code while signed out. The code has to belong to an account, so the app creates one with no email address and no password on it. It asks you first.</li>
-        </ul>
-
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Summary of information collected">
-          <table>
-            <thead>
-              <tr><th scope="col">Information</th><th scope="col">When</th><th scope="col">Why</th><th scope="col">Kept until</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Account ID</th><td>Any account</td><td>To identify your account and link your backup and purchases to it</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Email address</th><td>Email or Google accounts</td><td>To sign you in and confirm requests are yours</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Password hash</th><td>Email accounts</td><td>To sign you in</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Google sign-in details</th><td>Google accounts</td><td>To sign you in without a password</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Your ByeFeed setup (cloud backup)</th><td>Any account</td><td>To restore your setup and sync it across devices</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Purchase and subscription records</th><td>Pro bought while you have an account</td><td>To confirm Pro and keep its status current</td><td>You delete the account</td></tr>
-              <tr><th scope="row">Unlock code redemptions</th><td>You redeem a code</td><td>To grant Pro and stop codes being guessed</td><td>You delete the account (failed attempts: 24 hours)</td></tr>
-              <tr><th scope="row">Support emails</th><td>You write to us</td><td>To answer you</td><td>As long as needed to help you</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="muted">Accounts with no email address are also deleted automatically after 90 days without activity, unless they hold Pro (<a href="#retention">section 9</a>).</p>
-
-        <h3 id="account-info">Account information</h3>
-        <ul>
-          <li><strong>Account ID.</strong> A random identifier (a UUID) created by our authentication provider, Supabase, when the account is created. It isn&rsquo;t derived from your phone, phone number or advertising ID, and on its own it identifies nobody. The app shows it as <span class="ui">Account ID</span> on the account page of an account with no email address.</li>
-          <li><strong>Email address</strong>, if you sign up with email or sign in with Google.</li>
-          <li>Records Supabase keeps about the account itself, such as when it was created and when it last signed in.</li>
-        </ul>
-
-        <h3 id="auth-info">Authentication information</h3>
-        <ul>
-          <li><strong>Password.</strong> If you create an account with email and password, Supabase stores only a one-way hash of your password (bcrypt), never the password itself. We can&rsquo;t see it.</li>
-          <li><strong>Google sign-in.</strong> If you choose <span class="ui">Continue with Google</span>, Google confirms who you are and passes ByeFeed a sign-in token with your Google account&rsquo;s email address and the basic profile details Google includes, such as your name and profile picture link. Supabase keeps these with your account. No password is stored. ByeFeed doesn&rsquo;t show or use your name or picture.</li>
-          <li><strong>Verification codes.</strong> We email 6-digit codes to confirm a new account, reset a password or change an email address. Each code expires after 15 minutes. ByeFeed has no passwordless sign-in; codes are only used for these three things.</li>
-          <li><strong>Sign-in session.</strong> Once you are signed in, a session token is kept in the app&rsquo;s private storage on your phone so you stay signed in.</li>
-        </ul>
-
-        <h3 id="backup-data">Your ByeFeed setup (cloud backup)</h3>
-        <p>If you have an account, the app keeps one backup of your setup in our database, up to 2&nbsp;MB, so you can restore it and use it on more than one device. It contains:</p>
-        <ul>
-          <li>your block groups: the apps, websites, keywords and short-form feeds you chose to block, their schedules and session limits;</li>
-          <li>your protection and cooldown settings: countdown lengths, pause length, PIN attempt limit, which settings are PIN-protected, and the PIN-recovery amount you chose (a setting only; no payment is ever taken);</li>
-          <li>a <strong>SHA-256 hash of your PIN</strong>, never the PIN itself;</li>
-          <li>your default redirect site;</li>
-          <li>statistics counters: blocks today, focus time today, how many times you have paused blocking, and the date and app of the last pause;</li>
-          <li>your pause history: for each time you used <span class="ui">Pause Blocking</span>, the time, the app and the group;</li>
-          <li>how you labelled apps in your statistics (productive, neutral or distraction).</li>
-        </ul>
-        <p>The websites and keywords in the backup are the ones <strong>you chose to block</strong>. They are part of your settings, not a record of anything you visited. The backup never contains the web addresses you open, your searches, the pages you view or your detailed app usage.</p>
-
-        <h3 id="purchase-info">Purchase information</h3>
-        <p>If you buy Pro, Google Play handles the payment. What we receive and keep is described in <a href="#payments">Payments and refunds</a>. In short: the purchase token and product, your plan and its status, and the purchase record Google Play returns. Never your card details.</p>
-
-        <h3 id="support-info">Support emails</h3>
-        <p>If you email us, we receive your email address, your message and anything you choose to include, such as a problem report from the app. We use it only to help you.</p>
-      </section>
-
-      <section id="on-device" aria-labelledby="h-on-device">
-        <h2 id="h-on-device">4. Information processed on your phone only</h2>
-        <p>Blocking is decided entirely on your phone. ByeFeed only watches for the triggers you set up, and ignores everything else. Nothing from these checks is stored, and nothing is sent to us or anyone else.</p>
-
-        <h3 id="detection">How ByeFeed detects what to block</h3>
-        <p>ByeFeed uses Android&rsquo;s accessibility service, the system feature for apps that respond to what happens on screen. It is turned on only after you accept a separate notice in the app, and you can turn it off at any time in Android&rsquo;s Accessibility settings.</p>
-        <p>Android lets ByeFeed know when the app or screen in front of you changes. Each time, ByeFeed runs only the checks your block list needs:</p>
-        <ul>
-          <li><strong>Blocked apps.</strong> It checks which app just came to the front against the apps you chose to block.</li>
-          <li><strong>Blocked websites and keywords.</strong> In supported browsers (Chrome, Samsung Internet, Firefox, Edge, Brave, Opera, DuckDuckGo, Vivaldi and Kiwi), it checks the address in the address bar against your blocked sites and keywords. While you are typing in the address bar it waits, so a half-typed address never counts.</li>
-          <li><strong>Short-form feeds.</strong> In the apps where you switched a feed off, it looks for the specific screen elements that mark that feed, such as the Reels player, by their built-in names and labels. It stops as soon as it finds one.</li>
-          <li><strong>Other apps&rsquo; built-in browsers</strong>, only if you turn this on. When you open a web page inside another app, it checks that page for your blocked sites and keywords.</li>
-        </ul>
-        <p>If something matches, the block screen appears. If nothing matches, ByeFeed does nothing. Either way the result is used once and discarded: nothing is saved, logged or uploaded, no browsing history is built, and ByeFeed never records what you type.</p>
-
-        <h3>Usage access</h3>
-        <p>If you allow <strong>usage access</strong>, ByeFeed reads how long you spend in each app to show your statistics, and uses it to recognise the app in front of you more reliably. This usage data stays on your phone. Only the statistics counters listed above are part of the cloud backup.</p>
-
-        <h3>Data stored on your phone</h3>
-        <p>The app keeps its working data in its private storage on your phone: your block groups and settings, statistics, pause history, a log of blocks, per-app open counts, your PIN hash, and the Google Play purchase token (so Pro works offline and without an account). Other apps can&rsquo;t read it. Uninstalling ByeFeed, clearing its data in Android&rsquo;s settings, or using <span class="ui">Delete account</span> or <span class="ui">Clear data</span> removes it.</p>
-        <p>ByeFeed turns off Android&rsquo;s automatic app backup, so none of this is copied to your Google Drive backup.</p>
-      </section>
-
-      <section id="database" aria-labelledby="h-database">
-        <h2 id="h-database">5. Information stored in our database</h2>
-        <p>Our backend runs on <strong>Supabase</strong>, which provides the authentication service and a PostgreSQL database. This is every place data about an account is stored:</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Database records">
-          <table>
-            <thead>
-              <tr><th scope="col">Record</th><th scope="col">What it contains</th><th scope="col">Who can read it</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Account</th><td>Account ID, email address, password hash (email accounts), Google sign-in details (Google accounts), and when it was created and last signed in</td><td>Supabase&rsquo;s authentication service</td></tr>
-              <tr><th scope="row">Profile</th><td>Account ID, whether Pro is on, and when it was created and updated</td><td>Our server functions only</td></tr>
-              <tr><th scope="row">Backup</th><td>Your ByeFeed setup (see <a href="#backup-data">section 3</a>), its format version and when it was last updated</td><td>Only your own signed-in account</td></tr>
-              <tr><th scope="row">Subscription</th><td>Plan, product, Google Play purchase token, status, auto-renew, end of the current period, start date, and the purchase record returned by Google Play</td><td>Our server functions only</td></tr>
-              <tr><th scope="row">Code redemptions</th><td>The code you redeemed, when, and when its Pro ends</td><td>Our server functions only</td></tr>
-              <tr><th scope="row">Redemption attempts</th><td>Codes tried and when, to stop guessing. Deleted after 24 hours</td><td>Our server functions only</td></tr>
-              <tr><th scope="row">Account transfer tokens</th><td>A single-use token, used when you add an email or Google account that already has a ByeFeed account. No personal data; expires after 15 minutes</td><td>Our server functions only</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>The database also holds housekeeping records with no personal data: counts of inactive accounts removed by the cleanup job described in <a href="#retention">section 9</a> (kept for two years, with no account IDs), and a heartbeat that keeps the database active.</p>
-      </section>
-
-      <section id="technical" aria-labelledby="h-technical">
-        <h2 id="h-technical">6. Device and technical information</h2>
-        <ul>
-          <li><strong>No device identifiers.</strong> ByeFeed doesn&rsquo;t collect your advertising ID, Android ID, IMEI, serial number or phone number.</li>
-          <li><strong>Problem reports are yours to send.</strong> A report from <span class="ui">Report a problem</span> contains technical details about your phone and the app (see <a href="#support">section 19</a>). It only reaches us if you choose to send it.</li>
-          <li><strong>IP addresses.</strong> When the app connects to Supabase (to sign in, back up, verify a purchase or redeem a code), Supabase receives your IP address as part of the connection. It may keep it in its service logs for security and operation, and its sign-in log can include the IP address used. We don&rsquo;t use IP addresses to locate you or build a profile of you.</li>
-          <li><strong>Crash reports through Google.</strong> ByeFeed has no crash-reporting service of its own. If you allow your phone to share usage and diagnostics with Google, Android may report ByeFeed crashes to Google, and we can see them as crash reports in the Google Play Console. These contain technical details such as the phone model, Android version and the error, not your name or contact details.</li>
-          <li><strong>No analytics.</strong> ByeFeed doesn&rsquo;t measure how you use the app, and neither does this website.</li>
-        </ul>
-      </section>
-
-      <section id="cookies" aria-labelledby="h-cookies">
-        <h2 id="h-cookies">7. Cookies and local storage</h2>
-        <p><strong>This website</strong> sets no cookies, runs no analytics and loads nothing from other companies: its fonts, images and scripts are all served from byefeed.app. Your browser&rsquo;s local storage is used for two preferences, and only if you set them: the country you pick in the pricing section (<code>bf-country</code>) and the light or dark theme you choose with the theme button (<code>bf-theme</code>). They stay in your browser, are never sent to us, and you can clear them with your browser&rsquo;s site data. The website is hosted by GitHub (GitHub Pages), which receives the standard information any web server sees, such as your IP address and browser type, in order to deliver the pages and keep them secure, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&rsquo;s Privacy Statement</a>.</p>
-        <p><strong>The app</strong> uses no cookies or advertising identifiers. It stores its own data on your phone as described in <a href="#on-device">section 4</a>, including your sign-in session if you have an account.</p>
-      </section>
-
-      <section id="purposes" aria-labelledby="h-purposes">
-        <h2 id="h-purposes">8. Why we use it</h2>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Purposes">
-          <table>
-            <thead>
-              <tr><th scope="col">Information</th><th scope="col">What we use it for</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Account and sign-in details</th><td>Signing you in, keeping your backup private to you, and confirming that a request about the account really comes from you</td></tr>
-              <tr><th scope="row">Cloud backup</th><td>Restoring your setup on a new phone or after reinstalling, and keeping your devices in sync</td></tr>
-              <tr><th scope="row">Purchase records</th><td>Confirming that a purchase is genuine and active, unlocking Pro, keeping its status current through renewals, cancellations and refunds, and stopping one purchase being claimed by two accounts</td></tr>
-              <tr><th scope="row">Code redemptions</th><td>Granting Pro for the code&rsquo;s period and limiting guessing</td></tr>
-              <tr><th scope="row">On-phone blocking checks and usage time</th><td>Enforcing your blocks and limits and showing your own statistics</td></tr>
-              <tr><th scope="row">Support emails and problem reports</th><td>Answering you and fixing problems</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>We don&rsquo;t use any of it for advertising or to build profiles of you.</p>
-      </section>
-
-      <section id="retention" aria-labelledby="h-retention">
-        <h2 id="h-retention">9. How long it is kept</h2>
-        <ul>
-          <li><strong>Email and Google accounts</strong>, with their backup, purchase and redemption records: until you delete the account.</li>
-          <li><strong>Accounts with no email address</strong>: until you delete them with <span class="ui">Clear data</span>, or <strong>automatically after 90 days without activity</strong>, unless the account holds Pro through a subscription or an unlock code. Activity means the app refreshing its sign-in, saving a backup or redeeming a code. The cleanup runs once a week.</li>
-          <li><strong>Failed code attempts</strong>: 24 hours.</li>
-          <li><strong>Account transfer tokens</strong>: they expire 15 minutes after they are created, and are deleted with the account they came from.</li>
-          <li><strong>Verification codes</strong>: they expire after 15 minutes.</li>
-          <li><strong>Support emails</strong>: as long as needed to help you and to keep a record of requests we acted on, such as deletion requests.</li>
-          <li><strong>Data on your phone</strong>: until you delete your account, use <span class="ui">Clear data</span>, clear the app&rsquo;s data in Android&rsquo;s settings or uninstall ByeFeed.</li>
-          <li><strong>Database backups</strong>: see <a href="#backups">section 17</a>.</li>
-          <li><strong>Records Google keeps about your purchase</strong>: kept by Google under its own policies.</li>
-        </ul>
-      </section>
-
-      <section id="deletion" aria-labelledby="h-deletion">
-        <h2 id="h-deletion">10. Account and data deletion</h2>
-        <p>You can delete your account yourself, inside the app, at any time:</p>
-        <ul>
-          <li><strong>Email or Google account:</strong> <span class="ui">Settings</span> &rarr; your email address under Account &rarr; <span class="ui">Delete account</span>.</li>
-          <li><strong>Account with no email:</strong> <span class="ui">Settings</span> &rarr; <span class="ui">No account attached</span> &rarr; <span class="ui">Clear data</span>.</li>
-        </ul>
-        <p>Both delete your account <strong>immediately</strong>. Deleting the account also deletes every record linked to it: your profile, cloud backup, subscription record, code redemptions and transfer tokens. The app then resets your phone to a fresh install of ByeFeed.</p>
-        <p>What deletion doesn&rsquo;t touch:</p>
-        <ul>
-          <li><strong>Your Google Play subscription.</strong> It isn&rsquo;t cancelled or refunded. Cancel it in the <a href="https://play.google.com/store/account/subscriptions">Play Store</a>.</li>
-          <li><strong>Google&rsquo;s own records</strong> of your purchase, which Google keeps under its own policies.</li>
-          <li><strong>Database backups</strong> made before the deletion, until they expire (see <a href="#backups">section 17</a>).</li>
-        </ul>
-        <p>Signing out or uninstalling the app does <strong>not</strong> delete your account. If you can&rsquo;t use the app, you can ask us to delete the account by email. The <a href="../delete-account/index.html">Delete Account page</a> explains every route step by step.</p>
-      </section>
-
-      <section id="access" aria-labelledby="h-access">
-        <h2 id="h-access">11. Who can access your data</h2>
-        <ul>
-          <li><strong>You</strong>, through the app. The database only lets a signed-in account read and write its own backup.</li>
-          <li><strong>Bros Dolz LLC</strong>: the people who run ByeFeed can access the database through Supabase&rsquo;s administration tools, and do so when needed to run the service, answer a support or privacy request, act on a deletion request, or look into a problem.</li>
-          <li><strong>Our service providers</strong> (<a href="#third-parties">section 12</a>), only as needed to provide their service to us.</li>
-          <li><strong>Authorities</strong>, only where the law requires us to disclose information.</li>
-        </ul>
-      </section>
-
-      <section id="third-parties" aria-labelledby="h-third-parties">
-        <h2 id="h-third-parties">12. Third-party technologies and services</h2>
-        <p>ByeFeed uses a small number of outside services. Each receives only what it needs to do its job:</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="Third-party services">
-          <table>
-            <thead>
-              <tr><th scope="col">Service</th><th scope="col">What it does for ByeFeed</th><th scope="col">What it may process</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Supabase</th>
-                <td>Accounts and sign-in, the PostgreSQL database, and the server functions that verify purchases and receive Google Play updates</td>
-                <td>Account ID, email address, password hash, Google sign-in details, your cloud backup, purchase and redemption records, and the IP address of each connection</td>
-              </tr>
-              <tr>
-                <th scope="row">Google Sign-In</th>
-                <td>Lets you sign in with your Google account, using the account picker on your phone</td>
-                <td>Your Google account&rsquo;s email address and basic profile, and the sign-in token. Covered by <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Google Play Billing and the Google Play Developer API</th>
-                <td>Takes payments and runs subscriptions. Our server asks Google Play whether a purchase is genuine, and Google Play tells our server about renewals, cancellations and refunds</td>
-                <td>Google handles your payment details. We exchange the purchase token and product with Google, and the app gives Google Play your Account ID with each purchase so Google can link the purchase to your account</td>
-              </tr>
-              <tr>
-                <th scope="row">Google Play and Android</th>
-                <td>Distribute and update the app, and may send crash reports if you allow it</td>
-                <td>As described by Google; see <a href="#technical">section 6</a></td>
-              </tr>
-              <tr>
-                <th scope="row">Google Workspace (email)</th>
-                <td>Delivers the 6-digit codes we email you for sign-up, password reset and email changes</td>
-                <td>Your email address and the email it delivers</td>
-              </tr>
-              <tr>
-                <th scope="row">GitHub (GitHub Pages)</th>
-                <td>Hosts this website, byefeed.app</td>
-                <td>Standard web request information, such as IP address and browser type. Covered by <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub&rsquo;s Privacy Statement</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p>Email you send to support@brosdolz.com is received and handled by Bros Dolz LLC itself. ByeFeed also includes open-source libraries that run only on your phone and send nothing anywhere, for example its local database and its network-status check.</p>
-        <p><strong>Not used:</strong> ByeFeed contains no analytics services (such as Firebase or Google Analytics), no crash-reporting services (such as Crashlytics or Sentry), no advertising networks or SDKs, no social-media SDKs and no AI services. Nothing you do in ByeFeed is sent to an AI model.</p>
-      </section>
-
-      <section id="no-selling" aria-labelledby="h-no-selling">
-        <h2 id="h-no-selling">13. No selling, renting or advertising</h2>
-        <p>We don&rsquo;t sell, rent or trade personal data. We don&rsquo;t share it with anyone for advertising or marketing. There is no advertising in ByeFeed and no advertising identifier is collected. ByeFeed is paid for by Pro, not by your data.</p>
-      </section>
-
-      <section id="does-not" aria-labelledby="h-does-not">
-        <h2 id="h-does-not">14. What ByeFeed does not do</h2>
-        <ul>
-          <li>It doesn&rsquo;t show ads or include any advertising SDK.</li>
-          <li>It doesn&rsquo;t include analytics, tracking or crash-reporting SDKs.</li>
-          <li>It doesn&rsquo;t collect your advertising ID, Android ID, IMEI, serial number or phone number.</li>
-          <li>It doesn&rsquo;t keep or upload your browsing history, searches or the pages you view.</li>
-          <li>It doesn&rsquo;t keep or upload anything from its blocking checks.</li>
-          <li>It doesn&rsquo;t record what you type.</li>
-          <li>It doesn&rsquo;t access your location, camera, microphone, contacts, SMS, call logs, photos or files.</li>
-          <li>It doesn&rsquo;t use your fingerprint, face or any other biometric data.</li>
-          <li>It doesn&rsquo;t sell your data or share it for advertising.</li>
-          <li>It doesn&rsquo;t send your data to AI services.</li>
-          <li>It doesn&rsquo;t lock, wipe or otherwise control your phone.</li>
-          <li>It doesn&rsquo;t copy its data into your Google Drive backup.</li>
-        </ul>
-      </section>
-
-      <section id="permissions" aria-labelledby="h-permissions">
-        <h2 id="h-permissions">15. App permissions</h2>
-        <p>ByeFeed is a blocker, so it asks for some powerful permissions. Each is asked for when a feature you are using needs it, and the app tells you whether that feature needs it or just works better with it. This is every permission the app declares:</p>
-        <div class="table-wrap" tabindex="0" role="region" aria-label="App permissions">
-          <table>
-            <thead>
-              <tr><th scope="col">Permission</th><th scope="col">What ByeFeed uses it for</th><th scope="col">Needed?</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">Accessibility service</th><td>Detecting the triggers you set (a blocked app opening, a blocked website or keyword in your browser, a short-form feed you switched off) and showing the block screen. <a href="#detection">How it works</a></td><td>Yes, for blocking. You turn it on yourself after a separate notice</td></tr>
-              <tr><th scope="row">Usage access</th><td>Measuring time in each app for your statistics, and recognising the app in front of you more reliably</td><td>For statistics. Blocking works without it</td></tr>
-              <tr><th scope="row">Display over other apps</th><td>Showing the block screen, session prompts and the session timer on top of other apps</td><td>Yes</td></tr>
-              <tr><th scope="row">Foreground service</th><td>Keeping blocking running in the background, with the ongoing notification Android requires</td><td>Yes</td></tr>
-              <tr><th scope="row">Notifications</th><td>The &ldquo;blocking is on&rdquo; notification, time left in a session, blocking paused, and reminders about missing permissions. Each can be switched off in your phone&rsquo;s settings</td><td>Optional</td></tr>
-              <tr><th scope="row">Ignore battery optimisation</th><td>Stopping Android from shutting down blocking in the background</td><td>Optional, recommended</td></tr>
-              <tr><th scope="row">Run at startup</th><td>Starting blocking again after your phone restarts or the app updates</td><td>Granted automatically</td></tr>
-              <tr><th scope="row">Device admin</th><td>Only for <span class="ui">Prevent Uninstall</span>: stopping ByeFeed being uninstalled while that setting is on. It declares no other device-admin powers</td><td>Optional, off unless you turn it on</td></tr>
-              <tr><th scope="row">Internet and network state</th><td>Signing in, backing up, verifying purchases, and retrying a backup when your connection comes back</td><td>Granted automatically</td></tr>
-              <tr><th scope="row">Google Play billing</th><td>Buying Pro</td><td>Granted automatically</td></tr>
-              <tr><th scope="row">Visibility of launchable apps</th><td>Listing the apps on your phone that have a launcher icon, so you can pick which to block. ByeFeed doesn&rsquo;t request access to the full list of installed packages</td><td>Granted automatically</td></tr>
-              <tr><th scope="row">Biometric and fingerprint</th><td>Added automatically by Android&rsquo;s Credential Manager library, which Google sign-in uses. ByeFeed itself never shows a fingerprint or face prompt and never uses your biometric data</td><td>Not used by ByeFeed</td></tr>
-              <tr><th scope="row">Internal app permission</th><td>Created automatically by an Android support library so ByeFeed&rsquo;s own components can signal each other privately. Only ByeFeed holds it, and it gives no access to your data</td><td>Granted automatically</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p><strong>Never requested:</strong> location, camera, microphone, contacts, SMS, call logs, calendar, photos, files or storage, and the full list of installed apps (<code>QUERY_ALL_PACKAGES</code>).</p>
-      </section>
-
-      <section id="security" aria-labelledby="h-security">
-        <h2 id="h-security">16. Security</h2>
-        <ul>
-          <li><strong>Encryption.</strong> Everything the app sends to our backend travels over HTTPS (TLS). Supabase encrypts the database at rest.</li>
-          <li><strong>Row-level security.</strong> Every table in the database has row-level security turned on. A signed-in account can read and write only its own backup. Purchase, profile and redemption records can&rsquo;t be read or changed by the app at all, only by our server functions.</li>
-          <li><strong>Least privilege.</strong> The app&rsquo;s database roles hold only the permissions they use, and functions that run with extra rights are locked down. The administrative key for the database is never included in the app.</li>
-          <li><strong>Verified purchases.</strong> Pro is unlocked only after our server confirms a purchase with Google Play, and one purchase can&rsquo;t be claimed by two accounts.</li>
-          <li><strong>Limits.</strong> Each backup is capped at 2&nbsp;MB, and sign-in and code redemption are rate-limited.</li>
-          <li><strong>Passwords and PIN.</strong> Passwords are stored as bcrypt hashes by Supabase. Your PIN is stored as a SHA-256 hash, never as the digits.</li>
-          <li><strong>Reviews.</strong> We audited the backend&rsquo;s access controls in July 2026 and fixed what we found.</li>
-        </ul>
-        <p>No system is perfectly secure. If you believe you have found a security problem, please email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>.</p>
-      </section>
-
-      <section id="backups" aria-labelledby="h-backups">
-        <h2 id="h-backups">17. Backups</h2>
-        <p>&ldquo;Backup&rdquo; means two different things here:</p>
-        <ul>
-          <li><strong>Cloud backup</strong> is the app feature: the copy of your ByeFeed setup kept with your account (<a href="#backup-data">section 3</a>). For an account with no email address, created by redeeming a code, it is kept for up to 90 days without activity (unless the account holds Pro). For an email or Google account, it is kept until you decide to delete the account. Either way, it is deleted the moment the account is.</li>
-          <li><strong>Database backups</strong> are copies of the whole database that exist so it can be recovered after a hardware failure, a mistake or a security incident.</li>
-        </ul>
-        <p>Our database is hosted by Supabase, and database backups are made by Supabase as part of its hosting service, according to the service plan we use. Before we change the structure of the database, we may also take a one-off backup through Supabase.</p>
-        <!-- CONFIRM (optional): the exact number of days Supabase keeps database backups on the plan in use. -->
-        <p>Database backups are kept only for a limited period and then expire on their own. If you delete your account, copies of its data can remain in database backups made before the deletion until those backups expire. Backups exist only so the service can be recovered.</p>
-      </section>
-
-      <section id="payments" aria-labelledby="h-payments">
-        <h2 id="h-payments">18. Payments and refunds</h2>
-        <h3>Who processes payments</h3>
-        <p>ByeFeed Pro is sold only through <strong>Google Play</strong>, using Google Play Billing. There is no other payment provider. Google processes the payment and holds your payment details under <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice">Google Payments&rsquo; privacy notice</a>.</p>
-        <h3>What ByeFeed receives</h3>
-        <p><strong>We never receive or store your card number, bank details or billing address.</strong> When you buy Pro:</p>
-        <ul>
-          <li>Google Play gives the app a <strong>purchase token</strong> and the product you bought. The app keeps them on your phone, which lets Pro work offline and without an account. Without a network connection, Pro keeps working for up to 7 days before the purchase is checked again.</li>
-          <li>If you have an account, the app sends the token and product to our server, which asks Google Play whether the purchase is genuine and active. We then store your plan (monthly, yearly or lifetime), the product, the purchase token, its status (for example active, cancelled, expired or refunded), whether it auto-renews, the end of the current period and when it started, together with the <strong>purchase record Google Play returns</strong>. That record includes details such as the order number, the country of purchase, and the purchase, renewal and expiry times.</li>
-          <li>Google Play keeps our server informed about renewals, cancellations, refunds and other changes to that purchase.</li>
-          <li>With each purchase, the app gives Google Play your <strong>Account ID</strong> (if you have an account), so the purchase can be linked to your account.</li>
-        </ul>
-        <p>You can buy Pro without an account. In that case nothing about the purchase is sent to us; Google Play confirms it on your phone.</p>
-        <h3>Subscriptions and one-time purchases</h3>
-        <p>Pro is available as a monthly or yearly subscription, or as a one-time lifetime purchase that doesn&rsquo;t renew or expire. Subscriptions renew automatically until you cancel. Prices are set per country and shown by Google Play before you confirm; if Google Play offers you a free trial, it shows its length and when you will be charged.</p>
-        <h3>Cancellation</h3>
-        <p>Cancel at any time in the Play Store (<strong>Payments &amp; subscriptions &rarr; Subscriptions</strong>) or at <a href="https://play.google.com/store/account/subscriptions">play.google.com/store/account/subscriptions</a>. <span class="ui">Manage subscription</span> in the app opens the same page. Pro stays on until the end of the period you have paid for. Uninstalling ByeFeed or deleting your ByeFeed account doesn&rsquo;t cancel a subscription.</p>
-        <h3>Refunds</h3>
-        <p>Refunds are handled under <strong>Google Play&rsquo;s refund policy</strong>. To request one, find the purchase in your <a href="https://play.google.com/store/account/orderhistory">Google Play order history</a> and choose <strong>Request a refund</strong>, or follow Google&rsquo;s guide, <a href="https://support.google.com/googleplay/answer/2479637">Get refunds on Google Play purchases</a>. If a purchase is refunded, Google Play tells our server and the purchase is marked as refunded, so Pro ends for that purchase.</p>
-        <!-- REPLACE: refund policy. If Bros Dolz LLC adopts refund terms of its own, replace the next paragraph with them. -->
-        <p>Bros Dolz LLC has not published separate refund terms of its own. If you think you were charged by mistake, or Google can&rsquo;t help, email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a> with your Google Play order number (it starts with <code>GPA.</code>) and we will look into it. Never send us card details.</p>
-      </section>
-
-      <section id="support" aria-labelledby="h-support">
-        <h2 id="h-support">19. Support and diagnostics</h2>
-        <h3>Contacting support</h3>
-        <p>Email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>. Include what is needed to help you: a description of the problem, your phone model and Android version, and for account or purchase questions, the email address on the account, your Account ID if you have one, or your Google Play order number. <strong>Never send your password, PIN, a verification code or card details.</strong> We will never ask for them.</p>
-        <h3>Problem reports</h3>
-        <p>In the app, <span class="ui">Settings</span> &rarr; <span class="ui">About</span> &rarr; <span class="ui">Report a problem</span> builds a report you can read before doing anything with it. It contains:</p>
-        <ul>
-          <li>the date and time, the app version and build number;</li>
-          <li>your phone&rsquo;s manufacturer and model, Android version, and technical build details (build fingerprint and processor type);</li>
-          <li>up to 20 recent events inside the app, such as a sign-in error message;</li>
-          <li>the details of the last crash, if there was one.</li>
-        </ul>
-        <p><span class="ui">Email report</span> opens a pre-filled email to us in your own email app, and <span class="ui">Copy report</span> copies the report. <strong>Nothing is sent unless you send it.</strong></p>
-        <h3>What is collected automatically</h3>
-        <p>ByeFeed doesn&rsquo;t send diagnostic information automatically. If the app crashes, the crash details are saved only on your phone, so they can go into the next problem report you choose to send. Separately, Android may report crashes to Google if you allow your phone to share diagnostics (<a href="#technical">section 6</a>).</p>
-        <h3>How diagnostic information is used</h3>
-        <p>Only to understand and fix the problem you reported, and to reply to you.</p>
-      </section>
-
-      <section id="rights" aria-labelledby="h-rights">
-        <h2 id="h-rights">20. Your rights and requests</h2>
-        <p>Depending on where you live, you may have the right to access the personal data we hold about you, correct it, delete it, receive a copy of it, object to or restrict how we use it, and complain to your local data protection authority.</p>
-        <ul>
-          <li><strong>Delete:</strong> do it yourself in the app, immediately (<a href="#deletion">section 10</a>), or ask us.</li>
-          <li><strong>Correct:</strong> change your email address or password in the app under your account, or ask us.</li>
-          <li><strong>Access or copy:</strong> the app has no export feature, so email us and we will send you the data held about your account.</li>
-          <li><strong>Other requests:</strong> email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>.</li>
-        </ul>
-        <p>So that we act only for the account holder, we reply to the email address on the account. An account with no email address can be identified by the <span class="ui">Account ID</span> shown on its account page, or by a Google Play order number if you bought Pro with it. We will ask for nothing more than we need to find the right account.</p>
-      </section>
-
-      <section id="children" aria-labelledby="h-children">
-        <h2 id="h-children">21. Children</h2>
-        <p>ByeFeed is not directed at children and is intended for people aged 18 and over. We don&rsquo;t knowingly collect personal data from children. If you believe a child has created an account, email us so we can delete it.</p>
-      </section>
-
-      <section id="international" aria-labelledby="h-international">
-        <h2 id="h-international">22. Where data is processed</h2>
-        <p>Bros Dolz LLC is based in the United States. ByeFeed&rsquo;s accounts and database are hosted by Supabase in its East US (Ohio) region, <code>us-east-2</code>, in the United States. If you use ByeFeed from another country, your account data is transferred to and stored in the United States. Google and GitHub may process data in other countries under their own privacy policies.</p>
-      </section>
-
-      <section id="changes" aria-labelledby="h-changes">
-        <h2 id="h-changes">23. Changes to this policy</h2>
-        <p>We may update this policy as ByeFeed changes. The &ldquo;Last updated&rdquo; date at the top shows when it last changed.</p>
-      </section>
-
-      <section id="ai" aria-labelledby="h-ai">
-        <h2 id="h-ai">24. AI disclosure</h2>
-        <p>ByeFeed was built with the help of AI-assisted development tools. This does not change what data the app collects or how it is handled; those practices are described above.</p>
-      </section>
-
-      <section id="contact" aria-labelledby="h-contact">
-        <h2 id="h-contact">25. Contact</h2>
-        <p>Questions, requests or concerns about privacy: <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>.</p>
-        <p>By post: Bros Dolz LLC, 418 Broadway Ste N, Albany, NY 12207-2922, United States.</p>
-      </section>
-
-    </article>
-  </div>
-</main>
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <a class="brand" href="../index.html"><svg class="mark" width="42" height="30" viewBox="0 0 262.8 189" aria-hidden="true" focusable="false"><use href="#bf-mark"/></svg><span class="wordmark">ByeFeed</span><span class="sr-only"> home</span></a>
-      <p>Break free from your screen.</p>
-      <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.byefeed.app"><svg aria-hidden="true" focusable="false"><use href="#i-play"/></svg> Get it on Google Play</a>
+      </nav>
     </div>
-    <nav aria-labelledby="f-product">
-      <h2 class="footer-title" id="f-product">Product</h2>
-      <ul class="footer-links">
-        <li><a href="../index.html#features">Features</a></li>
-        <li><a href="../index.html#pricing">Pricing</a></li>
-        <li><a href="../index.html#privacy">Privacy by design</a></li>
-        <li><a href="https://play.google.com/store/apps/details?id=com.byefeed.app">Google Play</a></li>
-      </ul>
-    </nav>
-    <nav aria-labelledby="f-help">
-      <h2 class="footer-title" id="f-help">Help</h2>
-      <ul class="footer-links">
-        <li><a href="../faq/index.html">FAQ</a></li>
-        <li><a href="mailto:support@brosdolz.com">Contact support</a></li>
-        <li><a href="../faq/index.html#report-a-bug">Report a problem</a></li>
-      </ul>
-    </nav>
-    <nav aria-labelledby="f-legal">
-      <h2 class="footer-title" id="f-legal">Legal</h2>
-      <ul class="footer-links">
-        <li><a href="../privacy/index.html">Privacy Policy</a></li>
-        <li><a href="../delete-account/index.html">Delete your account</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="wrap footer-bottom">
-    <p>&copy; <span data-year>2026</span> Bros Dolz LLC. ByeFeed is made by Bros Dolz LLC.</p>
-    <p>Google Play is a trademark of Google LLC.</p>
-  </div>
-</footer>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span data-year>2026</span> Bros Dolz LLC. ByeFeed is made by Bros Dolz LLC.</p>
+      <p>Google Play is a trademark of Google LLC.</p>
+    </div>
+  </footer>
 </body>
+
 </html>
