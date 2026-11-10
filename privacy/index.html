@@ -123,7 +123,7 @@
         <h1>Privacy Policy</h1>
         <p class="lead">What ByeFeed collects, what stays on your phone, where your data is stored, who can see it,
           how long it is kept, and how to delete it.</p>
-        <p class="meta">Last updated: 14 October 2026</p>
+        <p class="meta">Last updated: 9 November 2026</p>
       </div>
     </div>
 
@@ -202,9 +202,11 @@
               same way, and their requests name only the preset and its length (<a href="#preset-info">section
                 3</a>).</li>
             <li><strong>Payments go through Google Play.</strong> We never see your card or bank details.</li>
-            <li><strong>No ads, no tracking and no crash-reporting service.</strong> The only things we count are
-              anonymous totals for our in-app messages, never who saw them (<a href="#in-app-messages">section
-                3</a>). We don&rsquo;t sell your data.</li>
+            <li><strong>No ads, no tracking and no crash-reporting service.</strong> We count anonymous totals for
+              our in-app messages, never who saw them (<a href="#in-app-messages">section 3</a>). Setup asks, once
+              and optionally, how you heard about ByeFeed; if you answer, we keep the answer with your account and
+              look at it only as totals (<a href="#discovery-info">section 3</a>). We don&rsquo;t sell your
+              data.</li>
             <li><strong>Sharing is limited.</strong> We use the service providers in <a href="#third-parties">section
                 12</a>, and share leaderboard information only if you join. Nothing goes to an AI model.</li>
             <li><strong>You can delete your account inside the app.</strong> Its live account records are deleted
@@ -262,6 +264,18 @@
                   <td>Google accounts</td>
                   <td>To sign you in without a password</td>
                   <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">App platform (Android or iOS)</th>
+                  <td>Any account</td>
+                  <td>To know which ByeFeed app each account uses, so we can support it</td>
+                  <td>You delete the account</td>
+                </tr>
+                <tr>
+                  <th scope="row">How you heard about ByeFeed (optional)</th>
+                  <td>You answer or skip the question at the end of setup, and have an account</td>
+                  <td>To understand, from totals, how people discover ByeFeed</td>
+                  <td>You remove it or delete the account</td>
                 </tr>
                 <tr>
                   <th scope="row">Your ByeFeed setup (cloud backup)</th>
@@ -421,7 +435,10 @@
               is not your name. It is shown exactly as you typed it. Your first change is instant; after that you can
               change it once a week.</li>
             <li><strong>Your current streak</strong> of days won. Your phone sends the number and the last day it
-              covers to our server; the public board shows the number and your rank. The date is not shown to other
+              covers to our server, with the random ID for this installation of ByeFeed that pacts already use
+              (<a href="#pact-info">below</a>), so that if you use ByeFeed on more than one phone, each one&rsquo;s
+              streak is kept apart and the board shows the one from the phone that counted the latest day. The
+              public board shows the number and your rank. The date and the installation ID are not shown to other
               users. The streak is counted on your phone, rather than independently verified by the server.</li>
             <li><strong>Your trophies</strong>, which our server works out from the pacts and presets it confirmed
               you kept (<a href="#pact-info">below</a>).</li>
@@ -441,7 +458,9 @@
             us (<a href="#contact">section 25</a>), the people who run ByeFeed can remove it.</p>
 
           <h3 id="pact-info">Pacts</h3>
-          <p>A pact is a promise to keep one blocking group on, exactly as it is, for a set time, from 7 days to a year.
+          <p>A pact is a promise to keep one blocking group on, without taking anything out of it or changing how
+            it blocks, for a set time, from 7 days to a year. You can still add to what it blocks: apps, sites,
+            keywords, short-form feeds and their settings.
             Keeping it to the end earns trophies, once. Pacts need an account with an email address, and our server
             keeps, for each one:</p>
           <ul>
@@ -460,7 +479,9 @@
             the old phone last checking in: our server then records the new installation ID, group number and
             fingerprint in place of the old ones, and the old phone can no longer report on it. The trophies you earn
             are recorded with the pact they came from. None of this is shown to anyone else; only your trophy total
-            is, and only if you join the leaderboard. Pact requests do not include your group&rsquo;s name or block list. Your
+            is, and only if you join the leaderboard. Pact requests do not include your group&rsquo;s name or block list.
+            If you add to the group while a pact runs, your phone checks in with the fingerprint of the
+            group as the pact started, so our server is not told that anything was added, or what. Your
             cloud backup does include your group&rsquo;s settings, as described <a href="#backup-data">above</a>, so
             the fingerprint does not make those separately stored settings anonymous.</p>
 
@@ -479,6 +500,35 @@
           <p>Preset requests contain the preset&rsquo;s name and its length, never the apps or websites it blocks,
             which stay on your phone. Without an account, or offline, a preset blocks just the same and nothing is sent.
             None of this is shown to anyone else; only your trophy total is, and only if you join the leaderboard.</p>
+
+          <h3 id="discovery-info">How you heard about ByeFeed</h3>
+          <p>Near the end of setup, once your plan is on, ByeFeed asks <span class="ui">How did you hear about
+              us?</span> You can pick one answer: an app store, a social media platform such as YouTube or TikTok, a
+            search engine, a friend or family member, a blog or article, an advertisement, something else, or
+            <span class="ui">Prefer not to say</span>. <strong>Answering is entirely voluntary.</strong> You can tap
+            <span class="ui">Skip</span>, and skipping doesn&rsquo;t affect your ability to use ByeFeed or any of
+            its features. ByeFeed asks once; it asks again only if setup runs from the start after you delete your
+            account or clear the app&rsquo;s data.</p>
+          <ul>
+            <li><strong>What we keep.</strong> The answer you picked, or the fact that you skipped the question, and
+              when, in your profile with your account ID. It is linked to your account, so it is not anonymous, but it
+              is never shown to other people who use ByeFeed.</li>
+            <li><strong>Without an account</strong>, your answer stays on your phone. It is sent only if your phone
+              later has an account: when you create one or sign in, or when the app creates one because you redeem an
+              unlock code. If that account already has an answer, it keeps the one it has. If your phone never has an
+              account, the answer is never sent.</li>
+            <li><strong>Why.</strong> To understand how people discover ByeFeed, measure which ways of telling people
+              about it work, and decide where to focus our efforts and what to improve.</li>
+            <li><strong>Who sees it.</strong> Our admin dashboard shows it only as totals: how many accounts answered,
+              skipped or were never asked, and how many chose each answer. It doesn&rsquo;t list who chose what. Like
+              your other account records, the answer itself can be reached by the people who run ByeFeed through
+              Supabase&rsquo;s administration tools (<a href="#access">section 11</a>). It is never sold, shared with
+              advertisers or sent to an analytics company.</li>
+            <li><strong>Changing or removing it.</strong> Open your account page (<span class="ui">Settings</span>
+              &rarr; your account under Account) and tap <span class="ui">How you heard about ByeFeed</span>. You can
+              pick a different answer, or <span class="ui">Remove my answer</span>, which deletes the answer and the
+              record that you were asked. Deleting your account deletes it too.</li>
+          </ul>
 
           <h3 id="support-info">Support emails</h3>
           <p>If you email us, we receive your email address, your message and anything you choose to include, such as a
@@ -541,14 +591,20 @@
             <a href="#backup-data">section 3</a>), the dates on which blocking was running (so a day your phone was
             off is never counted as won), per-app open counts, your PIN hash, the Google Play purchase
             token (so Pro works offline and without an account), the in-app messages it last received with which
-            ones you closed, and the list of adult sites if a blocking group uses it. Other apps can&rsquo;t read it. Uninstalling ByeFeed,
+            ones you closed, the list of adult sites if a blocking group uses it, your trophy total as our server
+            last gave it (so it shows offline), and how many times you have opened ByeFeed since setup, with
+            whether you chose to leave a review or never to be asked (so the app asks for one only now and then),
+            whether setup has asked how you heard about ByeFeed and, until it is sent to an account, your answer
+            (see <a href="#discovery-info">section 3</a>). Other apps can&rsquo;t read it. Uninstalling ByeFeed,
             or clearing its data in Android&rsquo;s settings removes its private app storage. <span class="ui">Delete
               account</span> and <span class="ui">Clear data</span> reset the app&rsquo;s records, but some locally
             copied Studio pictures, cached files and purchase-recovery records can remain until you clear Android app
             data or uninstall. They are not uploaded to our server.</p>
           <p>If you make a pact, your phone also keeps its own record of it: the secret the pact&rsquo;s fingerprint
-            is made with, which never leaves your phone, and a random ID for this installation of ByeFeed (<a
-              href="#pact-info">section 3</a>). Signing out keeps it, because your blocking groups stay on the phone;
+            is made with, which never leaves your phone, a random ID for this installation of ByeFeed (<a
+              href="#pact-info">section 3</a>), and, for anything you add to the group while it runs,
+            one-way hashes made with that secret, so the record can tell they are still there without holding their
+            names. Signing out keeps it, because your blocking groups stay on the phone;
             clearing ByeFeed&rsquo;s data or uninstalling it removes it. A pact whose record is gone can still be moved
             to this installation within 24 hours of its phone last checking in (<a href="#pact-info">section 3</a>);
             otherwise it can no longer earn its trophies.</p>
@@ -582,7 +638,14 @@
                 </tr>
                 <tr>
                   <th scope="row">Profile</th>
-                  <td>Account ID, whether Pro is on, and when it was created and updated</td>
+                  <td>Account ID, whether Pro is on, how you heard about ByeFeed if you answered or skipped the
+                    question (and when), and when it was created and updated</td>
+                  <td>Our server functions. Your own signed-in account can read and change how you heard about
+                    ByeFeed; the admin dashboard shows it only as totals</td>
+                </tr>
+                <tr>
+                  <th scope="row">App platform</th>
+                  <td>Account ID, Android or iOS, and when the app on each first and last reported it</td>
                   <td>Our server functions only</td>
                 </tr>
                 <tr>
@@ -625,8 +688,10 @@
                 <tr>
                   <th scope="row">Leaderboard entry</th>
                   <td>Only if you join the leaderboard: account ID, your current streak and the last day it covers,
-                    when you joined and when your phone last sent your streak; your hand's skin tone, pose and
-                    background colour and when you last changed it</td>
+                    when you joined and when your phone last sent your streak; for each of the last ten
+                    installations of ByeFeed that sent one, its random installation ID, its streak, the last day it
+                    covers and when it last sent it; your hand's skin tone, pose and background colour and when you
+                    last changed it</td>
                   <td>Your username, hand, streak and trophies are shown to other people who use ByeFeed on the board. The
                     rest: our server functions and the people who run ByeFeed</td>
                 </tr>
@@ -682,6 +747,9 @@
               installation of the app and sends it with pact and preset requests, linked to your account. Clearing Android app data or reinstalling
               creates a new one. It does not collect your advertising ID, Android ID, IMEI, serial number or phone
               number.</li>
+            <li><strong>App platform.</strong> When the app opens while you are signed in, it tells our server whether
+              it is the Android or the iOS app, linked to your account, with when each first and last did so. It
+              sends nothing else about your phone with it: no model, version or device identifier.</li>
             <li><strong>Problem reports are yours to send.</strong> A report from <span class="ui">Report a
                 problem</span> contains technical details about your phone and the app (see <a href="#support">section
                 19</a>). It only reaches us if you choose to send it.</li>
@@ -774,6 +842,11 @@
                     totals, whether a message was useful</td>
                 </tr>
                 <tr>
+                  <th scope="row">How you heard about ByeFeed</th>
+                  <td>Understanding, from totals, how people discover ByeFeed, measuring which ways of telling people
+                    about it work, and deciding where to focus our efforts and what to improve</td>
+                </tr>
+                <tr>
                   <th scope="row">On-phone blocking checks and usage time</th>
                   <td>Enforcing your blocks and limits and showing your own statistics</td>
                 </tr>
@@ -799,8 +872,11 @@
               eligible accounts in batches, so deletion may occur later than the 90-day threshold.</li>
             <li><strong>Leaderboard entry</strong>: until you delete the account; you can&rsquo;t leave the
               leaderboard. Your hand goes with it. A streak
-              stops counting when its last covered day is more than three days behind the current UTC date; a fresh
+              stops counting when its last covered day is more than 30 days behind the current UTC date; a fresh
               report can make it count again.</li>
+            <li><strong>How you heard about ByeFeed</strong>: until you remove it on your account page or delete the
+              account. An answer waiting on your phone for an account is deleted from the phone once it is sent, or
+              when you sign out, delete your account or clear data.</li>
             <li><strong>Username, pacts, preset runs and trophies</strong>: until you delete the account. A broken or
               ended pact or preset run is kept too, so it can never be counted twice or brought back.</li>
             <li><strong>Failed code attempts</strong>: entries older than 24 hours are removed when the next signed-in
@@ -841,7 +917,7 @@
           <p>There is no way to leave the leaderboard without deleting your account: deleting it is what takes
             your entry, your streak and your hand off the board.</p>
           <p>Both delete your account <strong>immediately</strong> after the server confirms the request. Deleting the account also deletes the live records
-            linked to it: your profile, cloud backup, subscription record, code redemptions, username, leaderboard
+            linked to it: your profile (with how you heard about ByeFeed), cloud backup, subscription record, code redemptions, username, leaderboard
             entry, pacts, preset runs, trophies, transfer tokens and message recipient records, and it removes the target account ID from
             admin action entries. The app then resets its records on the current phone.</p>
           <p>What deletion doesn&rsquo;t touch:</p>
@@ -880,8 +956,8 @@
               Supabase&rsquo;s administration tools and our own admin dashboard, and do so when needed to run the
               service, answer a support or privacy request, act on a deletion request, or look into a problem. The
               dashboard needs a password and a second sign-in step, shows only what those tasks need (it never shows
-              what is inside your cloud backup), and records every change made through it, including every in-app
-              message it sends.</li>
+              what is inside your cloud backup, and shows how people heard about ByeFeed only as totals), and records
+              every change made through it, including every in-app message it sends.</li>
             <li><strong>Our service providers</strong> (<a href="#third-parties">section 12</a>), only as needed to
               provide their service to us.</li>
             <li><strong>Authorities</strong>, only where the law requires us to disclose information.</li>
@@ -1033,7 +1109,8 @@
                   <th scope="row">Notifications</th>
                   <td>The &ldquo;blocking is on&rdquo; notification, time left in a session, blocking paused,
                     reminders about missing permissions, and your progress: the weekly
-                    recap and the evening before a rest day. They are all made on your phone; none is sent from our
+                    recap, the evening before a rest day, and a pact or preset you kept. They are all made on your
+                    phone; none is sent from our
                     servers. Each can be switched off in your phone&rsquo;s settings</td>
                   <td>Optional</td>
                 </tr>
@@ -1243,6 +1320,8 @@
               ask us.</li>
             <li><strong>Correct:</strong> change your email address or password in the app under your account, or ask
               us.</li>
+            <li><strong>Change or remove how you heard about ByeFeed:</strong> on your account page in the app
+              (<a href="#discovery-info">section 3</a>), or ask us.</li>
             <li><strong>Access or copy:</strong> the app has no export feature, so email us and we will send you the
               data held about your account.</li>
             <li><strong>Other requests:</strong> email <a href="mailto:support@brosdolz.com">support@brosdolz.com</a>.
